@@ -1,0 +1,64 @@
+body
+{
+  background-color: rgb(236, 249, 217);
+  margin: 0;
+  padding: 0;
+  padding-top: 60px;
+}
+
+
+.Nav-Container
+{
+    height:30px;
+    background-color:green;
+    color:  rgb(113, 190, 113);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    text-align: right;
+    font-size: 30px;
+    margin-right: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+   
+}
+.Nav-heading
+{
+ margin: 20px;
+}
+.card
+{
+  height:350px;
+  width: 250px;
+  background-color: black border 1px solid gray;
+  border-radius: 5px;
+  box-shadow: 0px 1px 3px black;
+  margin-top: 30px ;
+}
+.Container{
+display: flex;
+justify-content: space-around;
+}
+.title
+{
+  font-size: 2.8em;
+  letter-spacing: 1px;
+  margin: 48px auto;
+  color: aliceblue;
+}
+.adjust
+{
+  max-width: 50%;
+    padding: 0 64px;
+}
+footer{
+  background-color:rgb(50, 73, 50) ;
+    color: whitesmoke;
+    padding: 10px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
