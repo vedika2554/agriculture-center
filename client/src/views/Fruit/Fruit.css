@@ -1,0 +1,52 @@
+.fruit-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+.fruit-tital{
+    text-align: center;
+    margin-bottom: -10px;
+}
+.fruit-tital1{
+    text-align: center;
+    margin-top: -1440px;
+    
+}
+.fruit-tital2{
+    text-align: center;
+    margin-top: 780px;
+}
+
+
+
+
+@media screen and  (min-width:394px){
+    .fruit-tital{
+       
+        margin-bottom: -10px;
+    }
+    .fruit-tital1{
+        position: relative;
+        top:-3570px;
+       
+    }
+    .fruit-tital2{
+        
+        margin-top: -1055px;
+        position: relative;
+        bottom: 10px;
+        
+    }
+}
+@media screen and  (min-width:1200px){
+    .fruit-tital1{
+        position: relative;
+        top:-30px;
+    }
+    .fruit-tital2{
+        
+        margin-top: 670px;
+        
+    }
+}
