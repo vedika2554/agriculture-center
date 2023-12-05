@@ -1,7 +1,8 @@
 import React from 'react';
 import "./Home.css";
 
-<body>
+function Home(){
+    <>
     <div class="Nav-Container">
         <div>
         <a class=".Nav-heading1">Agliculture Center</a>
@@ -38,6 +39,8 @@ import "./Home.css";
         <p>@ Content owned by Directorate of Knowledge Mangement in Agricultural; Agriculture centre 2023</p>
         <p>Copyrights & 2022 All Rights Reserved By Indian Councilof Agricultural</p>
     </footer>
+    </>
+}
+    
+export default Home;
 
-
-</body>
