@@ -2,8 +2,8 @@ import express from 'express';
 import dotenv from 'dotenv';
 dotenv.config();
 import mongoose from 'mongoose';
-import Flowers from './models/Flowers.js'
-import Fruits from './models/Fruits.js'
+import Flowers from './model/Flowers.js'
+import Fruits from './model/Fruits.js'
 const app = express();
 app.use(express.json());
 
