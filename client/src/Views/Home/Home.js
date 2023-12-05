@@ -1,22 +1,14 @@
 import React from 'react';
+import Navbar from"./../../component/Nvabar/Navbar";
 import "./Home.css";
+import Footer from './../../component/Footer/Footer';
 
 
 function Home() {
 
     return(
         <>
-        <div className='Nav-Container'>
-        <div>
-        <a className='Nav-heading1'>Agliculture Center</a>
-        </div>
-        <div>
-       <a className= 'Nav-heading'>Home</a>
-       <a className= 'Nav-heading'>Login</a>
-       <a className= 'Nav-heading'>Sign-Up</a>
-       <a className= 'Nav-heading'>About</a>
-    </div>
-    </div>
+    <Navbar/>
     <h1>Agliculture Center</h1>
 
     <div className='Container'>
@@ -37,11 +29,9 @@ function Home() {
        </div>
 
     </div>
+    <Footer/>
 
-    <footer>
-        <p>@ Content owned by Directorate of Knowledge Mangement in Agricultural; Agriculture centre 2023</p>
-        <p>Copyrights & 2022 All Rights Reserved By Indian Councilof Agricultural</p>
-    </footer>
+    
         </>
 
     )
