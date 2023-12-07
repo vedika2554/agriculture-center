@@ -2,8 +2,12 @@ import express from 'express';
 import dotenv from 'dotenv';
 dotenv.config();
 import mongoose from 'mongoose';
+
+import Nearbystore from './model/Nearbystore.js';
+
 import Flowers from './model/Flowers.js'
 import Fruits from './model/Fruits.js'
+
 const app = express();
 app.use(express.json());
 
@@ -42,8 +46,6 @@ app.post('/flower', async (req,res)=>{
 })
 
 
-
-
 app.get('/flowers', async(req, res)=>{
 
   const flowers = await Flowers.find();
@@ -65,8 +67,6 @@ app.get('/flowers', async(req, res)=>{
           message: 'flowers retrive successfully'
       })
   })
-
-
 
 
   app.delete('/flowers/:id', async (req, res)=>{
@@ -105,13 +105,6 @@ app.put('/flower/:id', async (req, res)=>{
 
 
 
-
-
-
-
-
-
-
 app.post('/fruit', async (req,res)=>{
   const { name, price, description, image } = req.body;
 
@@ -138,9 +131,6 @@ app.post('/fruit', async (req,res)=>{
   }
 })
 
-
-
-
 app.get('/fruits', async(req, res)=>{
 
   const fruits = await Fruits.find();
@@ -162,9 +152,6 @@ app.get('/fruits', async(req, res)=>{
           message: 'fruits retrive successfully'
       })
   })
-
-
-
 
   app.delete('/fruits/:id', async (req, res)=>{
     const {id} = req.params;
@@ -198,6 +185,85 @@ app.put('/fruit/:id', async (req, res)=>{
 
 
 
+
+
+
+
+app.post('/nearby', async (req,res)=>{
+  const { name, description, image } = req.body;
+
+  const store = new Nearbystore({
+    name: name,
+    description: description,
+    image: image
+  });
+  try{
+
+    const savedStore = await store.save();
+  
+      res.json({
+          success: true,
+          data: savedStore,
+          message: 'store added successfully'
+      })
+  }catch(e){
+      res.json({
+          success:false,
+          message: e.message
+      })
+  }
+})
+
+app.get('/stores', async(req, res)=>{
+
+  const store = await Nearbystore.find();
+  
+     res.json({
+      success: true,
+      data: store,
+      message: 'stores get successfully'
+     }) 
+  })
+  
+  app.get('/stores/:id', async(req, res)=>{
+      const {id} = req.params;
+  
+      const stores = await Nearbystore.findOne({_id: id});
+      res.json({
+          success: true,
+          data: stores,
+          message: 'stores retrive successfully'
+      })
+  })
+
+  app.delete('/store/:id', async (req, res)=>{
+    const {id} = req.params;
+
+    const store = await Nearbystore.deleteOne({_id: id});
+    res.json({
+        success: true,
+        data: store,
+        message: 'store deleted successfully'
+    })
+
+})
+app.put('/store/:id', async (req, res)=>{
+    const {id} = req.params;
+    const { name, description, image } = req.body;
+
+    await Nearbystore.updateOne({_id: id}, {$set:{
+        name: name,
+        description: description,
+        image: image
+ }});
+ const updatedStore = await Nearbystore.findOne({_id: id});
+
+ res.json({
+    success: true,
+    data: updatedStore,
+    message: 'store update successfully'
+ })
+})
 
 
 

@@ -1,15 +1,15 @@
-.Flower-card{
+.Nearby-card{
     background-color:#ffd9cc;
     border-radius: 20px;
     border: 1px solid black;
     margin: 10px;
     padding:10px;
     width: 300px;
-    margin-bottom:100px;
+    margin-bottom:10px;
     margin-top: 50px;
     
 }
-.flower-img
+.Nearby-img
 {
     margin-top: 20px;
     height: 260px;
@@ -20,24 +20,19 @@
     background-color: #f9f5d2;
 
 }
-.flower-name{
+.Nearby-name{
     margin-top: 20px;
     text-align: center;
     color: brown;
 }
-.flower-price{
-    margin-top: 20px;
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: cornflowerblue;
-}
-.flower-description{
+
+.Nearby-description{
     margin: 10px;
     margin-bottom: 60px;
     text-align: justify;
     color: brown;
 }
-.flower-shop-now{
+.Nearby-shop-now{
     background-color:cornflowerblue;
     font-size: 25px;
     padding: 10px;
@@ -51,16 +46,4 @@
     margin-left: 80px;
     position: relative;
     top:-20px;
-}
-@media screen and  (min-width:394px){
-    .Flower-card{
-        
-        margin-bottom:10px;
-       
-    }
-}
-@media screen and  (min-width:1200px){
-    .Flower-card{
-        margin-bottom:100px;
-    }
 }
