@@ -4,6 +4,7 @@ dotenv.config();
 import mongoose from 'mongoose';
 import Flowers from './model/Flowers.js'
 import Fruits from './model/Fruits.js'
+import Seeds from './model/Seeds.js'
 const app = express();
 app.use(express.json());
 
@@ -14,6 +15,8 @@ const connectMongoDB = async () =>{
   }
 }
 connectMongoDB();
+
+// post api for flower
 
 app.post('/flower', async (req,res)=>{
   const { name, price, description, image } = req.body;
@@ -42,7 +45,7 @@ app.post('/flower', async (req,res)=>{
 })
 
 
-
+// get api for flower
 
 app.get('/flowers', async(req, res)=>{
 
@@ -67,7 +70,7 @@ app.get('/flowers', async(req, res)=>{
   })
 
 
-
+// delete api for flower
 
   app.delete('/flowers/:id', async (req, res)=>{
     const {id} = req.params;
@@ -80,6 +83,9 @@ app.get('/flowers', async(req, res)=>{
     })
 
 })
+
+// put api for flower
+
 app.put('/flower/:id', async (req, res)=>{
     const {id} = req.params;
     const { name, price, description, image } = req.body;
@@ -108,7 +114,7 @@ app.put('/flower/:id', async (req, res)=>{
 
 
 
-
+// post api for fruit
 
 
 
@@ -139,7 +145,7 @@ app.post('/fruit', async (req,res)=>{
 })
 
 
-
+// get api for fruit
 
 app.get('/fruits', async(req, res)=>{
 
@@ -163,7 +169,7 @@ app.get('/fruits', async(req, res)=>{
       })
   })
 
-
+// delete api for fruit
 
 
   app.delete('/fruits/:id', async (req, res)=>{
@@ -177,6 +183,9 @@ app.get('/fruits', async(req, res)=>{
     })
 
 })
+
+// put api for fruit
+
 app.put('/fruit/:id', async (req, res)=>{
     const {id} = req.params;
     const { name, price, description, image } = req.body;
@@ -213,13 +222,13 @@ app.put('/fruit/:id', async (req, res)=>{
 
 const PORT = 5000;
 
-
+// post api for seed
 
 
 app.post('/seeds', async (req, res) => {
   const {name, price, description, image} = req.body;
 
-  const seed = new Seed({
+  const seed = new Seeds({
     name:name,
     description: description,
     price: price,
@@ -242,6 +251,69 @@ app.post('/seeds', async (req, res) => {
 
   }
 
+})
+
+
+// get api for seeds
+
+
+app.get('/seeds', async(req, res)=>{
+  const seeds = await Seeds.find();
+
+  res.json({
+    success:true,
+    data: seeds,
+    message: "Seeds get successfully"
+  })
+})
+
+
+
+app.get('/seeds/:id', async(req, res)=>{
+  const {id} = req.params;
+
+  const seeds = await Seeds.findOne({_id: id});
+  res.json({
+      success: true,
+      data: seeds,
+      message: 'seeds retrive successfully'
+  })
+})
+
+
+// delete api for seeds
+
+app.delete('/seeds/:id', async (req, res)=>{
+  const {id} = req.params;
+
+  const seeds = await Seeds.deleteOne({_id: id});
+  res.json({
+      success: true,
+      data: seeds,
+      message: 'seeds deleted successfully'
+  })
+
+})
+
+// put api for seeds
+
+app.put('/seeds/:id', async (req, res)=>{
+  const {id} = req.params;
+  const { name, price, description, image } = req.body;
+
+  await Seeds.updateOne({_id: id}, {$set:{
+      name: name,
+      price: price,
+      description: description,
+      image: image
+}});
+const updatedSeeds = await Seeds.findOne({_id: id});
+
+res.json({
+  success: true,
+  data: updatedSeeds,
+  message: 'Seeds update successfully'
+})
 })
 
 

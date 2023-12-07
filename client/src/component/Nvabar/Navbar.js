@@ -7,13 +7,13 @@ export default function Navbar(){
 
 <div className='Nav-Container'>
      <div>
-          <a className='Nav-heading1'>Agliculture Center</a>
+          <a className='Nav-heading1' href="#">Agliculture Center</a>
      </div>
         <div>
           <Link className= 'Nav-heading' to= "/">Home</Link>
-          <Link className= 'Nav-heading' to="/">Login</Link>
-          <Link className= 'Nav-heading' to="/">Sign-Up</Link>
-          <Link className= 'Nav-heading' to="/">About</Link>
+          <Link className= 'Nav-heading' to="/login">Login</Link>
+          <Link className= 'Nav-heading' to="/signup">Sign-Up</Link>
+          <Link className= 'Nav-heading' to="/about">About</Link>
        </div>
 </div>
     )

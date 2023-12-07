@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import FlowerCard from '../../Component/Flowercard/Flowercard'
+import FlowerCard from '../../Component/Flowercard/Flowercard';
 import axios from 'axios'
 import './Flowers.css'
 function Flowers(){
