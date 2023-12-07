@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import FruitCard from './../../components/Fruitcard/Fruitcard'
+import FruitCard from '../../Component/Fruitcard/Fruitcard'
 import axios from 'axios'
 import './Fruit.css'
 function Fruit(){

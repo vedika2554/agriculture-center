@@ -1,14 +1,15 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
-import {createBrowserRouter, RouterProvider} from 'react-router-dom'
-import Fruit from './views/Fruit/Fruit'
-import Flowers from './views/Flowers/Flowers'
-import Nearbystore from './views/Nearbystore/Nearbystore'
+import Fruit from './View/Fruit/Fruit'
+import Flowers from  './View/Flowers/Flowers'
+import Nearbystore from './View/Nearbystore/Nearbystore'
+
+import Home from './View/Home/Home';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const router = createBrowserRouter([
+
   {
   'path': '/fruits',
   'element': <Fruit/>
@@ -21,13 +22,17 @@ const router = createBrowserRouter([
   'path': '/nearbystore',
   'element': <Nearbystore/>
 },
-
+  {
+        path: "/",
+        element: <Home/>
+    }
 
 ])
 
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render( 
+<>
+< RouterProvider router = { router }/>
 
-
-root.render(
-  <RouterProvider router={router}/>
- 
-)
+</>
+);

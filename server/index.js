@@ -2,9 +2,12 @@ import express from 'express';
 import dotenv from 'dotenv';
 dotenv.config();
 import mongoose from 'mongoose';
-import Flowers from './models/Flowers.js'
-import Fruits from './models/Fruits.js'
-import Nearbystore from './models/Nearbystore.js';
+
+import Nearbystore from './model/Nearbystore.js';
+
+import Flowers from './model/Flowers.js'
+import Fruits from './model/Fruits.js'
+
 const app = express();
 app.use(express.json());
 
@@ -275,6 +278,37 @@ app.put('/store/:id', async (req, res)=>{
 
 
 const PORT = 5000;
+
+
+
+
+app.post('/seeds', async (req, res) => {
+  const {name, price, description, image} = req.body;
+
+  const seed = new Seed({
+    name:name,
+    description: description,
+    price: price,
+    image: image
+  });
+
+
+ try {
+   const savedSeed = await seed.save();
+
+    res.json({
+      success : true,
+      data: savedSeed,
+      message: 'Product added successfully'
+    })
+   } catch (e) {
+     res.json({success:false,
+     message: e.message
+   })
+
+  }
+
+})
 
 
 app.listen(PORT, () => {

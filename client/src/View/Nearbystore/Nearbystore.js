@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Nearbycard from './../../components/Nearbycard/Nearbycard'
+import Nearbycard from './../../Component/Nearbycard/Nearbycard'
 import axios from 'axios'
 import './Nearbystore.css'
 function Store(){

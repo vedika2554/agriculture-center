@@ -1,0 +1,23 @@
+.Nav-Container
+{
+    height:30px;
+    background-color:green;
+    color:  rgb(113, 190, 113);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    text-align: right;
+    font-size: 30px;
+    margin-right: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+   
+}
+.Nav-heading
+{
+ margin: 20px;
+ text-decoration: none;
+}
