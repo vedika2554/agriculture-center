@@ -22,7 +22,7 @@ return(
             store?.map((store, index)=>{
                 const {_id, name, description, image} = store;
                 return(<Nearbycard key={index} id={_id} name={name} 
-                    description={description} image={image}/>)
+                    description={description} image={image} />)
             })
         }
         </div>

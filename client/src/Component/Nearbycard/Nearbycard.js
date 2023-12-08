@@ -9,7 +9,7 @@ function NearbyCard({id, name, description, image})
             <img className="Nearby-img"src={image}alt={name}/>
             <h2 className="Nearby-name">{name}</h2>
             <p className="Nearby-description">{description}</p>
-            <Link  className="Nearby-shop-now"to={`/buy/${id}`}>See details</Link>
+            <Link  className="Nearby-shop-now"to={`/detail/${id}`}>See details</Link>
 
         </div>
     )

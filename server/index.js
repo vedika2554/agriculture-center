@@ -9,6 +9,12 @@ import Flowers from './model/Flowers.js'
 import Fruits from './model/Fruits.js'
 
 import Seeds from './model/Seeds.js'
+import Flowerorder from './model/Flowerorder.js'
+import Fruitorder from './model/Fruitorder.js'
+import Seedorder from './model/Seedorder.js'
+import Vegetableorder from './model/Vegetableorder.js';
+
+
 
 
 const app = express();
@@ -96,13 +102,16 @@ app.get('/flowers', async(req, res)=>{
 
 app.put('/flower/:id', async (req, res)=>{
     const {id} = req.params;
-    const { name, price, description, image } = req.body;
+    const { name, price, description, image,image1,image2,image3 } = req.body;
 
     await Flowers.updateOne({_id: id}, {$set:{
         name: name,
         price: price,
         description: description,
-        image: image
+        image: image,
+        image1:image1,
+        image2:image2,
+        image3:image3
  }});
  const updatedFlower = await Flowers.findOne({_id: id});
 
@@ -127,13 +136,16 @@ app.put('/flower/:id', async (req, res)=>{
 
 
 app.post('/fruit', async (req,res)=>{
-  const { name, price, description, image } = req.body;
+  const { name, price, description, image ,image1,image2,image3} = req.body;
 
   const fruit = new Fruits({
     name: name,
     price: price,
     description: description,
-    image: image
+    image: image,
+    image1:image1,
+    image2:image2,
+    image3:image3
   });
   try{
 
@@ -196,13 +208,16 @@ app.get('/fruits', async(req, res)=>{
 
 app.put('/fruit/:id', async (req, res)=>{
     const {id} = req.params;
-    const { name, price, description, image } = req.body;
+    const { name, price, description, image,image1,image2,image3 } = req.body;
 
     await Fruits.updateOne({_id: id}, {$set:{
         name: name,
         price: price,
         description: description,
-        image: image
+        image: image,
+        image1:image1,
+        image2:image2,
+        image3:image3,
  }});
  const updatedFruit = await Fruits.findOne({_id: id});
 
@@ -220,12 +235,18 @@ app.put('/fruit/:id', async (req, res)=>{
 
 
 app.post('/nearby', async (req,res)=>{
-  const { name, description, image } = req.body;
+  const { name, description, image, mobile ,hours ,url,image1,image2,image3} = req.body;
 
   const store = new Nearbystore({
     name: name,
     description: description,
-    image: image
+    image: image,
+    mobile:mobile,
+    hours:hours,
+    url:url,
+    image1:image1,
+    image2:image2,
+    image3:image3,
   });
   try{
 
@@ -279,12 +300,18 @@ app.get('/stores', async(req, res)=>{
 })
 app.put('/store/:id', async (req, res)=>{
     const {id} = req.params;
-    const { name, description, image } = req.body;
+    const { name, description, image,mobile,hours ,url,image1,image2,image3 } = req.body;
 
     await Nearbystore.updateOne({_id: id}, {$set:{
         name: name,
         description: description,
-        image: image
+        image: image,
+        mobile:mobile,
+        hours:hours,
+        url:url,
+        image1:image1,
+        image2:image2,
+        image3:image3,
  }});
  const updatedStore = await Nearbystore.findOne({_id: id});
 
@@ -298,8 +325,115 @@ app.put('/store/:id', async (req, res)=>{
 
 
 
+app.post('/flowerorder', async(req, res)=>{
+  const {flower, user, quantity , shippingAddress} = req.body;
+
+  const flowerorder = new Flowerorder ({
+      flower: flower,
+      user: user,
+      quantity: quantity,
+      shippingAddress: shippingAddress 
+  });
+  try{
+  const savedFlower = await flowerorder.save();
+
+  res.json({
+      success:true,
+      data: savedFlower,
+      message: 'order placed successfully'
+
+  })}
+  catch(e){
+      res.json({
+          success:false,
+          message: e.message
+      })
+      
+  }
+})
 
 
+app.post('/fruitorder', async(req, res)=>{
+  const {fruit, user, quantity , shippingAddress} = req.body;
+
+  const fruitorder = new Fruitorder({
+      fruit: fruit,
+      user: user,
+      quantity: quantity,
+      shippingAddress: shippingAddress 
+  });
+  try{
+  const savedFruit = await fruitorder.save();
+
+  res.json({
+      success:true,
+      data: savedFruit,
+      message: 'order placed successfully'
+
+  })}
+  catch(e){
+      res.json({
+          success:false,
+          message: e.message
+      })
+      
+  }
+})
+
+
+app.post('/seedorder', async(req, res)=>{
+  const {seed, user, quantity , shippingAddress} = req.body;
+
+  const seedorder = new Seedorder({
+      seed: seed,
+      user: user,
+      quantity: quantity,
+      shippingAddress: shippingAddress 
+  });
+  try{
+  const savedSeed = await seedorder.save();
+
+  res.json({
+      success:true,
+      data: savedSeed,
+      message: 'order placed successfully'
+
+  })}
+  catch(e){
+      res.json({
+          success:false,
+          message: e.message
+      })
+      
+  }
+})
+
+app.post('/vegetableorder', async(req, res)=>{
+  const {vegetable, user, quantity , shippingAddress} = req.body;
+
+  const vegetableorder = new Vegetableorder({
+      vegetable: vegetable,
+      user: user,
+      quantity: quantity,
+      shippingAddress: shippingAddress 
+  });
+  try{
+  const savedVegetable = await vegetableorder.save();
+
+  res.json({
+      success:true,
+      data: savedVegetable,
+      message: 'order placed successfully'
+
+  })}
+  catch(e){
+      res.json({
+          success:false,
+          message: e.message
+      })
+      
+  }
+})
 
 
 
@@ -313,13 +447,16 @@ const PORT = 5000;
 
 
 app.post('/seeds', async (req, res) => {
-  const {name, price, description, image} = req.body;
+  const {name, price, description, image,image1,image2,image3} = req.body;
 
   const seed = new Seeds({
     name:name,
     description: description,
     price: price,
-    image: image
+    image: image,
+    image1:image1,
+    image2:image2,
+    image3:image3,
   });
 
 
@@ -386,13 +523,16 @@ app.delete('/seeds/:id', async (req, res)=>{
 
 app.put('/seeds/:id', async (req, res)=>{
   const {id} = req.params;
-  const { name, price, description, image } = req.body;
+  const { name, price, description, image ,image1,image2,image3 } = req.body;
 
   await Seeds.updateOne({_id: id}, {$set:{
       name: name,
       price: price,
       description: description,
-      image: image
+      image: image,
+      image1:image1,
+      image2:image2,
+      image3:image3
 }});
 const updatedSeeds = await Seeds.findOne({_id: id});
 

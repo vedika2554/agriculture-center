@@ -16,7 +16,17 @@ const seedsSchema = new Schema({
     description: {
         type: String,
         required: true
-    }
+    },
+    image1: {
+        type:String,
+        
+    },  image2: {
+        type:String,
+        
+    },  image3: {
+        type:String,
+     
+    },
 });
 
 const Seeds = model('Seeds', seedsSchema);
