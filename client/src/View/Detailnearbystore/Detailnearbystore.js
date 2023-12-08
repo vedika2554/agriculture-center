@@ -37,12 +37,12 @@ export default function Buy(){
     return(
         <div className="buy-container">
             <img src={store.image} alt={store.name} className="buy-product-img"/>
-            <div>
+            <div >
                 Company information
-                <h1>{store.name}</h1>
+                <h3>{store.name}</h3>
                 <p>{store.description}</p>
-                <h2>{store.mobile}</h2>
-                <h3>{store.hours}</h3>
+                <h4>{store.mobile}</h4>
+                <h5>{store.hours}</h5>
                 <p>{store.url}</p>
                 <h1>Photo</h1>
                 <div className="nearbyphotocontainer">

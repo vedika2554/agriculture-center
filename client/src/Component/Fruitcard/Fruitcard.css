@@ -4,7 +4,7 @@
     border: 1px solid black;
     margin: 10px;
     padding:10px;
-    width: 300px;
+    width: 330px;
     margin-bottom:160px;
     margin-top: 50px;
 }
@@ -23,6 +23,7 @@
     margin-top: 20px;
     text-align: center;
     color: brown;
+    font-size: 23px;
 }
 .fruit-price{
     margin-top: 20px;
@@ -35,6 +36,7 @@
     margin-bottom: 60px;
     text-align: justify;
     color: brown;
+    font-size: 15px;
 }
 .fruit-shop-now{
     background-color:cornflowerblue;

@@ -16,7 +16,7 @@ export default function Buy(){
             window.location.href = "/";
         }
 
-         const response = await axios.get(`/seeds/${id}`)
+         const response = await axios.get(`/vegitable/${id}`)
      
 
         setVegetable(response.data.data);
