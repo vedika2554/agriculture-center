@@ -1,18 +1,30 @@
 import React from 'react';
-import Navbar from '../../Component/Nvabar/Navbar';
 
+import Navbar from"./../../Component/Nvabar/Navbar";
 import "./Home.css";
 import Footer from './../../Component/Footer/Footer';
+
+
 
 
 function Home(){
 
     return(
-<>
+
+       <>
     <Navbar/>
 
 
+   
+
+
+
+
     
+
+    
+
+
     
     <h1>Agliculture Center</h1>
 
@@ -37,9 +49,13 @@ function Home(){
     <Footer/>
 
 
-        </>
-    )
-}
+
     
+        </>
+)}
+   
+
+  
+
 export default Home;
 

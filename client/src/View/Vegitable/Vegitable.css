@@ -1,37 +1,33 @@
-.seed-container{
+.flowers-container{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 
 }
-.seed-tital{
+.flower-tital{
     text-align: center;
     margin-bottom: -10px;
 }
-.seed-tital1{
+.flower-tital1{
     text-align: center;
     margin-top: -1440px;
     
 }
-.seed-tital2{
+.flower-tital2{
     text-align: center;
     margin-top: 780px;
 }
-
-
-
-
 @media screen and  (min-width:394px){
-    .seed-tital{
+    .flower-tital{
        
         margin-bottom: -10px;
     }
-    .seed-tital1{
+    .flower-tital1{
         position: relative;
-        top:-3570px;
+        top:-3460px;
        
     }
-    .seed-tital2{
+    .flower-tital2{
         
         margin-top: -1055px;
         position: relative;
@@ -40,11 +36,11 @@
     }
 }
 @media screen and  (min-width:1200px){
-    .seed-tital1{
+    .flower-tital1{
         position: relative;
         top:-30px;
     }
-    .seed-tital2{
+    .flower-tital2{
         
         margin-top: 670px;
         
