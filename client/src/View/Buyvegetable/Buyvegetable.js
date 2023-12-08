@@ -75,5 +75,5 @@ export default function Buy(){
                 <button className="Buy-btn" type="button" onClick={placeorder}>PlaceOrder</button>
             </div>
         </div>
-    )
+ )
 }

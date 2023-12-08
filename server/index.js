@@ -9,16 +9,15 @@ import Flowers from './model/Flowers.js'
 import Fruits from './model/Fruits.js'
 
 import Seeds from './model/Seeds.js'
-<<<<<<< HEAD
+
 import Vegitable from './model/Vegitable.js'
-=======
+
 import Flowerorder from './model/Flowerorder.js'
 import Fruitorder from './model/Fruitorder.js'
 import Seedorder from './model/Seedorder.js'
 import Vegetableorder from './model/Vegetableorder.js';
 
 
->>>>>>> 9e9b3e54b16bc984522ab79cd52692aa418b8548
 
 
 const app = express();
@@ -579,7 +578,7 @@ app.delete('/flowers/:id', async (req, res) => {
 
           //  post api for order 
 
-<<<<<<< HEAD
+
 
 
 
@@ -594,7 +593,7 @@ app.delete('/flowers/:id', async (req, res) => {
 
 
 // get api for seeds
-=======
+
           /*app.post("/order", async(req, res)=>{
             const {product, user, quantity, shippingAddress} = req.body;
           
@@ -638,11 +637,10 @@ app.delete('/flowers/:id', async (req, res) => {
             })
           })
           */
->>>>>>> 9e9b3e54b16bc984522ab79cd52692aa418b8548
 
-          const PORT = 5000;
+        
 
-<<<<<<< HEAD
+
 app.get('/seeds', async(req, res)=>{
   const seeds = await Seeds.find();
 
@@ -792,13 +790,9 @@ res.json({
 })
 
 
-
+const PORT = 5000;
 
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT} 🚀`);
 })
-=======
-app.listen(PORT, ()=>{
-    console.log(`server running on port ${PORT}`);
-});
->>>>>>> 9e9b3e54b16bc984522ab79cd52692aa418b8548
+

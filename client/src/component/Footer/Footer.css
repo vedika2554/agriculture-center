@@ -5,10 +5,13 @@
   line-height: 1.5;
   color: white;
   margin-bottom: 10px;
+  height: 350px;
 }
 .footer-container{
   max-width: 1170px;
   margin: auto;
+  display: flex;
+  justify-content: space-around;
 }
 .row{
 display: flex;
@@ -35,7 +38,7 @@ content: '';
 position: absolute;
 left: 0;
 bottom:  -10px;
-background-color: #bc0b72;
+background-color: red;
 height: 2px;
 box-sizing: border-box;
 width: 50px;
@@ -74,8 +77,8 @@ color: #24262b;
 background-color: #ffffff;
 }
 .footer-text{
-width: 250px;
-height: 50px;
+width: 200px;
+height: 20px;
 border-radius: 30px;
 border: none;
 }
