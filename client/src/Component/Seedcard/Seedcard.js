@@ -11,7 +11,7 @@ function Seedcard({id, name,price,  description, image})
             <h2 className="seed-name">{name}</h2>
             <h3 className="fruit-price">Price :  ₹ {price}</h3>
             <p className="seed-description">{description}</p>
-            <Link  className="seed-shop-now"to={`/buy/${id}`}>Shop now</Link>
+            <Link  className="seed-shop-now"to={`/buyseed/${id}`}>Shop now</Link>
 
         </div>
         </div>
