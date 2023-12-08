@@ -39,7 +39,7 @@ export default function Buy(){
 
 
     const placeorder =async()=>{
-        const response = await axios.post("/order",{
+        const response = await axios.post("/flowerorder",{
             flowers:flowers,
             user:user._id,
             quantity:quantity,
@@ -62,7 +62,11 @@ export default function Buy(){
                 <span className="quantity-text">{quantity} </span>
                 <span className="quantity-btn" onClick={increase}>+</span>
             </div>
-
+            <div className="flowerphotocontainer">
+            <img src={flowers.image1} className="flowerphoto"/> 
+            <img src={flowers.image2} className="flowerphoto"/> 
+            <img src={flowers.image3} className="flowerphoto"/> 
+            </div>
             <input type="text"
                 placeholder="shippingAddress"
                 className="shippingAddress"

@@ -1,18 +1,20 @@
-.Flower-card{
+
+.seed-card{
     background-color:#ffd9cc;
     border-radius: 20px;
     border: 1px solid black;
     margin: 10px;
     padding:10px;
     width: 300px;
-    margin-bottom:100px;
+    margin-bottom:160px;
     margin-top: 50px;
-    
+
 }
-.flower-img
+.seed-img
 {
     margin-top: 20px;
     height: 260px;
+    width: 260px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -20,24 +22,24 @@
     background-color: #f9f5d2;
 
 }
-.flower-name{
+.seed-name{
     margin-top: 20px;
     text-align: center;
     color: brown;
 }
-.flower-price{
+.seed-price{
     margin-top: 20px;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: cornflowerblue;
 }
-.flower-description{
+.seed-description{
     margin: 10px;
     margin-bottom: 60px;
     text-align: justify;
     color: brown;
 }
-.flower-shop-now{
+.seed-shop-now{
     background-color:cornflowerblue;
     font-size: 25px;
     padding: 10px;
@@ -53,17 +55,14 @@
     top:-20px;
 }
 @media screen and  (min-width:394px){
-    .Flower-card{
+    .seed-card{
         
         margin-bottom:10px;
        
     }
 }
 @media screen and  (min-width:1200px){
-    .Flower-card{
+    .seed-card{
         margin-bottom:100px;
     }
-}
-.flower-store.image1.image-hover{
-    
 }

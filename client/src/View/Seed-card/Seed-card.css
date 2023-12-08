@@ -1,0 +1,52 @@
+.seed-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+.seed-title{
+    text-align: center;
+    margin-bottom: -10px;
+}
+.seed-title1{
+    text-align: center;
+    margin-top: -1440px;
+    
+}
+.seed-title2{
+    text-align: center;
+    margin-top: 780px;
+}
+
+
+
+
+@media screen and  (min-width:394px){
+    .seed-title{
+       
+        margin-bottom: -10px;
+    }
+    .seed-title1{
+        position: relative;
+        top:-3570px;
+       
+    }
+    .seed-title2{
+        
+        margin-top: -1055px;
+        position: relative;
+        bottom: 10px;
+        
+    }
+}
+@media screen and  (min-width:1200px){
+    .seed-title1{
+        position: relative;
+        top:-30px;
+    }
+    .seed-title2{
+        
+        margin-top: 670px;
+        
+    }
+}

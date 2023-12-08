@@ -17,6 +17,16 @@ const flowersSchema = new Schema({
         type:String,
         required:true
     },
+    image1: {
+        type:String,
+        
+    },  image2: {
+        type:String,
+        
+    },  image3: {
+        type:String,
+     
+    },
 
 });
 

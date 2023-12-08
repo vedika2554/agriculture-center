@@ -81,3 +81,12 @@ p {
 .Buy-btn:hover {
     background-color: #219653;
 }
+.flowerphotocontainer{
+    display: flex;
+    position: relative;
+    left: -60px;
+}
+.flowerphoto{
+    width: 180px;
+    margin-left: 30px;
+}

@@ -1,25 +1,25 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
-import "./Buyfruit.css";
+import "./Buyvegetable.css";
 
 export default function Buy(){
     const {id} = useParams();
     const [user, setUser] = useState({});
-    const [fruit,setFruit] = useState({});
+    const [vegetable,setVegetable] = useState({});
     const [quantity,setQuantity] = useState(1);
     const [shippingAddress,setShippingAddress] = useState('');
 
-    const loadFruit = async()=>{
+    const loadVegetable = async()=>{
 
         if(!id){
             window.location.href = "/";
         }
 
-         const response = await axios.get(`/fruits/${id}`)
+         const response = await axios.get(`/seeds/${id}`)
      
 
-        setFruit(response.data.data);
+        setVegetable(response.data.data);
     };
 
 
@@ -34,13 +34,13 @@ export default function Buy(){
         }
     }
     useEffect(()=>{
-        loadFruit();
+        loadVegetable();
     },[]);
 
 
     const placeorder =async()=>{
-        const response = await axios.post("/fruitorder",{
-            fruit:fruit,
+        const response = await axios.post("/vegetableorder",{
+            vegetable:vegetable,
             user:user._id,
             quantity:quantity,
             shippingAddress:shippingAddress,
@@ -51,11 +51,11 @@ export default function Buy(){
     }
     return(
         <div className="buy-container">
-            <img src={fruit.image} alt={fruit.name} className="buy-product-img"/>
+            <img src={vegetable.image} alt={vegetable.name} className="buy-product-img"/>
             <div>
-                <h1>{fruit.name}</h1>
-                <p>{fruit.description}</p>
-                <h1>{fruit.price}</h1>
+                <h1>{vegetable.name}</h1>
+                <p>{vegetable.description}</p>
+                <h1>{vegetable.price}</h1>
 
             <div className="qt-container">
                 <span className="quantity-btn" onClick={decrease}>-</span>
