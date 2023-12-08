@@ -1,6 +1,6 @@
 import { Schema, model } from 'mongoose';
 
-const seedSchema = new Schema({
+const seedsSchema = new Schema({
     image: {
         type : String,
         required : true
@@ -19,6 +19,6 @@ const seedSchema = new Schema({
     }
 });
 
-const Seed = model('Seed', seedSchema);
+const Seeds = model('Seeds', seedsSchema);
 
-export default Seed;
+export default Seeds;

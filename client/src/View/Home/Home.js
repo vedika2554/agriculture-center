@@ -1,18 +1,27 @@
 import React from 'react';
+
 import Navbar from"./../../Component/Nvabar/Navbar";
 import "./Home.css";
 import Footer from './../../Component/Footer/Footer';
 
 
 
-function Home() {
+
+function Home(){
 
     return(
+
        <>
     <Navbar/>
 
 
    
+
+
+
+
+    
+
     <div class="Nav-Container">
         <div>
         <a class=".Nav-heading1">Agliculture Center</a>
@@ -24,6 +33,8 @@ function Home() {
        <a class="Nav-heading">About</a>
     </div>
     </div>
+
+
 
     <h1>Agliculture Center</h1>
 
@@ -48,9 +59,13 @@ function Home() {
     <Footer/>
 
 
+
     
         </>
 )}
    
+
+  
+
 export default Home;
 

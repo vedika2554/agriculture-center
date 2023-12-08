@@ -2,8 +2,16 @@ import express from 'express';
 import dotenv from 'dotenv';
 dotenv.config();
 import mongoose from 'mongoose';
+
+import Nearbystore from './model/Nearbystore.js';
+
 import Flowers from './model/Flowers.js'
 import Fruits from './model/Fruits.js'
+
+import Seeds from './model/Seeds.js'
+import Vegitable from './model/Vegitable.js'
+
+
 const app = express();
 app.use(express.json());
 
@@ -14,6 +22,8 @@ const connectMongoDB = async () =>{
   }
 }
 connectMongoDB();
+
+// post api for flower
 
 app.post('/flower', async (req,res)=>{
   const { name, price, description, image } = req.body;
@@ -43,6 +53,7 @@ app.post('/flower', async (req,res)=>{
 
 
 
+// get api for flower
 
 app.get('/flowers', async(req, res)=>{
 
@@ -68,6 +79,7 @@ app.get('/flowers', async(req, res)=>{
 
 
 
+// delete api for flower
 
   app.delete('/flowers/:id', async (req, res)=>{
     const {id} = req.params;
@@ -80,6 +92,9 @@ app.get('/flowers', async(req, res)=>{
     })
 
 })
+
+// put api for flower
+
 app.put('/flower/:id', async (req, res)=>{
     const {id} = req.params;
     const { name, price, description, image } = req.body;
@@ -109,7 +124,7 @@ app.put('/flower/:id', async (req, res)=>{
 
 
 
-
+// post api for fruit
 
 
 app.post('/fruit', async (req,res)=>{
@@ -139,7 +154,7 @@ app.post('/fruit', async (req,res)=>{
 })
 
 
-
+// get api for fruit
 
 app.get('/fruits', async(req, res)=>{
 
@@ -164,7 +179,7 @@ app.get('/fruits', async(req, res)=>{
   })
 
 
-
+// delete api for fruit
 
   app.delete('/fruits/:id', async (req, res)=>{
     const {id} = req.params;
@@ -177,6 +192,9 @@ app.get('/fruits', async(req, res)=>{
     })
 
 })
+
+// put api for fruit
+
 app.put('/fruit/:id', async (req, res)=>{
     const {id} = req.params;
     const { name, price, description, image } = req.body;
@@ -202,6 +220,85 @@ app.put('/fruit/:id', async (req, res)=>{
 
 
 
+app.post('/nearby', async (req,res)=>{
+  const { name, description, image } = req.body;
+
+  const store = new Nearbystore({
+    name: name,
+    description: description,
+    image: image
+  });
+  try{
+
+    const savedStore = await store.save();
+  
+      res.json({
+          success: true,
+          data: savedStore,
+          message: 'store added successfully'
+      })
+  }catch(e){
+      res.json({
+          success:false,
+          message: e.message
+      })
+  }
+})
+
+app.get('/stores', async(req, res)=>{
+
+  const store = await Nearbystore.find();
+  
+     res.json({
+      success: true,
+      data: store,
+      message: 'stores get successfully'
+     }) 
+  })
+  
+  app.get('/stores/:id', async(req, res)=>{
+      const {id} = req.params;
+  
+      const stores = await Nearbystore.findOne({_id: id});
+      res.json({
+          success: true,
+          data: stores,
+          message: 'stores retrive successfully'
+      })
+  })
+
+  app.delete('/store/:id', async (req, res)=>{
+    const {id} = req.params;
+
+    const store = await Nearbystore.deleteOne({_id: id});
+    res.json({
+        success: true,
+        data: store,
+        message: 'store deleted successfully'
+    })
+
+})
+app.put('/store/:id', async (req, res)=>{
+    const {id} = req.params;
+    const { name, description, image } = req.body;
+
+    await Nearbystore.updateOne({_id: id}, {$set:{
+        name: name,
+        description: description,
+        image: image
+ }});
+ const updatedStore = await Nearbystore.findOne({_id: id});
+
+ res.json({
+    success: true,
+    data: updatedStore,
+    message: 'store update successfully'
+ })
+})
+
+
+
+
 
 
 
@@ -213,13 +310,13 @@ app.put('/fruit/:id', async (req, res)=>{
 
 const PORT = 5000;
 
-
+// post api for seed
 
 
 app.post('/seeds', async (req, res) => {
   const {name, price, description, image} = req.body;
 
-  const seed = new Seed({
+  const seed = new Seeds({
     name:name,
     description: description,
     price: price,
@@ -258,6 +355,160 @@ app.post('/seeds', async (req, res) => {
 
 
 
+// get api for seeds
+
+
+app.get('/seeds', async(req, res)=>{
+  const seeds = await Seeds.find();
+
+  res.json({
+    success:true,
+    data: seeds,
+    message: "Seeds get successfully"
+  })
+})
+
+
+
+app.get('/seeds/:id', async(req, res)=>{
+  const {id} = req.params;
+
+  const seeds = await Seeds.findOne({_id: id});
+  res.json({
+      success: true,
+      data: seeds,
+      message: 'seeds retrive successfully'
+  })
+})
+
+
+// delete api for seeds
+
+app.delete('/seeds/:id', async (req, res)=>{
+  const {id} = req.params;
+
+  const seeds = await Seeds.deleteOne({_id: id});
+  res.json({
+      success: true,
+      data: seeds,
+      message: 'seeds deleted successfully'
+  })
+
+})
+
+// put api for seeds
+
+app.put('/seeds/:id', async (req, res)=>{
+  const {id} = req.params;
+  const { name, price, description, image } = req.body;
+
+  await Seeds.updateOne({_id: id}, {$set:{
+      name: name,
+      price: price,
+      description: description,
+      image: image
+}});
+const updatedSeeds = await Seeds.findOne({_id: id});
+
+res.json({
+  success: true,
+  data: updatedSeeds,
+  message: 'Seeds update successfully'
+})
+})
+
+//post api for vegitable
+app.post('/vegitable', async (req, res) => {
+  const {name, price, description, image} = req.body;
+
+  const vegitable = new Vegitable({
+    name:name,
+    description: description,
+    price: price,
+    image: image
+  });
+
+
+ try {
+   const savedVegitable = await vegitable.save();
+
+    res.json({
+      success : true,
+      data: savedVegitable,
+      message: 'vegitable added successfully'
+    })
+   } catch (e) {
+     res.json({success:false,
+     message: e.message
+   })
+  }
+})
+
+
+//get api for vegitable
+
+app.get('/vegitable', async(req, res)=>{
+  const vegitable = await Vegitable.find();
+
+  res.json({
+    success:true,
+    data: vegitable,
+    message: "vegitable get successfully"
+  })
+})
+
+
+
+app.get('/vegitable/:id', async(req, res)=>{
+  const {id} = req.params;
+
+  const vegitable = await Vegitable.findOne({_id: id});
+  res.json({
+      success: true,
+      data: vegitable,
+      message: 'vegitable retrive successfully'
+  })
+})
+
+//delete api for vegitable
+
+app.delete('/vegitable/:id', async (req, res)=>{
+  const {id} = req.params;
+
+  const vegitable = await Vegitable.deleteOne({_id: id});
+  res.json({
+      success: true,
+      data: vegitable,
+      message: 'vegitable deleted successfully'
+  })
+
+})
+
+
+//put api for vegitable
+
+app.put('/vegitable/:id', async (req, res)=>{
+  const {id} = req.params;
+  const { name, price, description, image } = req.body;
+
+  await Vegitable.updateOne({_id: id}, {$set:{
+      name: name,
+      price: price,
+      description: description,
+      image: image
+}});
+const updatedVegitable = await Vegitable.findOne({_id: id});
+
+res.json({
+  success: true,
+  data: updatedVegitable,
+  message: 'Vegitable update successfully'
+})
+})
+
+
+
+
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT} 🚀`);
-});
+})

@@ -1,0 +1,10 @@
+.Nearby-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+.Nearby-tital{
+    text-align: center;
+    margin-bottom: -10px;
+}
