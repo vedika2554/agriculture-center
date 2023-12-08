@@ -18,8 +18,8 @@ import Nearbystore from './View/Nearbystore/Nearbystore'
 import Buy from './View/Buy/Buy'
 //import MyOrders from './View/Myorder/Myorder';
 
-
-
+import Signup from './View/Signup/Signup'
+import Login from './View/Login/Login'
 
 const router = createBrowserRouter([
 
@@ -69,9 +69,16 @@ const router = createBrowserRouter([
   {
     'path': "/nearbystore",
      'element': <Nearbystore/>
+  },
+
+  {
+    'path': "/signup",
+     'element': <Signup/>
+  },
+  {
+    'path': "/login",
+     'element': <Login/>
   }
-
-
 
 ])
 
