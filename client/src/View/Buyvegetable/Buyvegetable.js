@@ -16,7 +16,7 @@ export default function Buy(){
             window.location.href = "/";
         }
 
-         const response = await axios.get(`/seeds/${id}`)
+         const response = await axios.get(`/vegitable/${id}`)
      
 
         setVegetable(response.data.data);
@@ -75,5 +75,5 @@ export default function Buy(){
                 <button className="Buy-btn" type="button" onClick={placeorder}>PlaceOrder</button>
             </div>
         </div>
-    )
+ )
 }

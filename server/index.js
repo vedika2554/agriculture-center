@@ -11,6 +11,9 @@ import Flowers from './model/Flowers.js'
 import Fruits from './model/Fruits.js'
 
 import Seeds from './model/Seeds.js'
+
+import Vegitable from './model/Vegitable.js'
+
 import Flowerorder from './model/Flowerorder.js'
 import Fruitorder from './model/Fruitorder.js'
 import Seedorder from './model/Seedorder.js'
@@ -634,6 +637,22 @@ app.delete('/flowers/:id', async (req, res) => {
           
           //  post api for order 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// get api for seeds
+
           /*app.post("/order", async(req, res)=>{
             const {product, user, quantity, shippingAddress} = req.body;
           
@@ -678,8 +697,161 @@ app.delete('/flowers/:id', async (req, res) => {
           })
           */
 
-          const PORT = 5000;
+        
 
-app.listen(PORT, ()=>{
-    console.log(`server running on port ${PORT}`);
-});
+
+app.get('/seeds', async(req, res)=>{
+  const seeds = await Seeds.find();
+
+  res.json({
+    success:true,
+    data: seeds,
+    message: "Seeds get successfully"
+  })
+})
+
+
+
+app.get('/seeds/:id', async(req, res)=>{
+  const {id} = req.params;
+
+  const seeds = await Seeds.findOne({_id: id});
+  res.json({
+      success: true,
+      data: seeds,
+      message: 'seeds retrive successfully'
+  })
+})
+
+
+// delete api for seeds
+
+app.delete('/seeds/:id', async (req, res)=>{
+  const {id} = req.params;
+
+  const seeds = await Seeds.deleteOne({_id: id});
+  res.json({
+      success: true,
+      data: seeds,
+      message: 'seeds deleted successfully'
+  })
+
+})
+
+// put api for seeds
+
+app.put('/seeds/:id', async (req, res)=>{
+  const {id} = req.params;
+  const { name, price, description, image } = req.body;
+
+  await Seeds.updateOne({_id: id}, {$set:{
+      name: name,
+      price: price,
+      description: description,
+      image: image
+}});
+const updatedSeeds = await Seeds.findOne({_id: id});
+
+res.json({
+  success: true,
+  data: updatedSeeds,
+  message: 'Seeds update successfully'
+})
+})
+
+//post api for vegitable
+app.post('/vegitable', async (req, res) => {
+  const {name, price, description, image} = req.body;
+
+  const vegitable = new Vegitable({
+    name:name,
+    description: description,
+    price: price,
+    image: image
+  });
+
+
+ try {
+   const savedVegitable = await vegitable.save();
+
+    res.json({
+      success : true,
+      data: savedVegitable,
+      message: 'vegitable added successfully'
+    })
+   } catch (e) {
+     res.json({success:false,
+     message: e.message
+   })
+  }
+})
+
+
+//get api for vegitable
+
+app.get('/vegitable', async(req, res)=>{
+  const vegitable = await Vegitable.find();
+
+  res.json({
+    success:true,
+    data: vegitable,
+    message: "vegitable get successfully"
+  })
+})
+
+
+
+app.get('/vegitable/:id', async(req, res)=>{
+  const {id} = req.params;
+
+  const vegitable = await Vegitable.findOne({_id: id});
+  res.json({
+      success: true,
+      data: vegitable,
+      message: 'vegitable retrive successfully'
+  })
+})
+
+//delete api for vegitable
+
+app.delete('/vegitable/:id', async (req, res)=>{
+  const {id} = req.params;
+
+  const vegitable = await Vegitable.deleteOne({_id: id});
+  res.json({
+      success: true,
+      data: vegitable,
+      message: 'vegitable deleted successfully'
+  })
+
+})
+
+
+//put api for vegitable
+
+app.put('/vegitable/:id', async (req, res)=>{
+  const {id} = req.params;
+  const { name, price, description, image } = req.body;
+
+  await Vegitable.updateOne({_id: id}, {$set:{
+      name: name,
+      price: price,
+      description: description,
+      image: image
+}});
+const updatedVegitable = await Vegitable.findOne({_id: id});
+
+res.json({
+  success: true,
+  data: updatedVegitable,
+  message: 'Vegitable update successfully'
+})
+})
+
+
+const PORT = 5000;
+
+app.listen(PORT, () => {
+  console.log(`Server listening on port ${PORT} 🚀`);
+})
+

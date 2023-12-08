@@ -53,9 +53,9 @@ export default function Buy(){
         <div className="buy-container">
             <img src={flowers.image} alt={flowers.name} className="buy-product-img"/>
             <div>
-                <h1>{flowers.name}</h1>
+                <h3>{flowers.name}</h3>
                 <p>{flowers.description}</p>
-                <h1>{flowers.price}</h1>
+                <h4>{flowers.price}</h4>
 
             <div className="qt-container">
                 <span className="quantity-btn" onClick={decrease}>-</span>

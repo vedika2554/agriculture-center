@@ -1,44 +1,47 @@
-.fruit-card{
+.Flower-card{
     background-color:#ffd9cc;
     border-radius: 20px;
     border: 1px solid black;
     margin: 10px;
     padding:10px;
     width: 330px;
-    margin-bottom:160px;
+    margin-bottom:100px;
     margin-top: 50px;
+    
 }
-.fruit-img
+.flower-img
 {
     margin-top: 20px;
     height: 260px;
     display: block;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; 
+    padding-left: auto;
+    width: 300px;
     border-radius: 10px;
     background-color: #f9f5d2;
-
+    
 }
-.fruit-name{
+.flower-name{
     margin-top: 20px;
     text-align: center;
     color: brown;
     font-size: 23px;
 }
-.fruit-price{
+.flower-price{
     margin-top: 20px;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: cornflowerblue;
 }
-.fruit-description{
+.flower-description{
     margin: 10px;
     margin-bottom: 60px;
     text-align: justify;
     color: brown;
     font-size: 15px;
 }
-.fruit-shop-now{
+.flower-shop-now{
     background-color:cornflowerblue;
     font-size: 25px;
     padding: 10px;
@@ -54,14 +57,14 @@
     top:-20px;
 }
 @media screen and  (min-width:394px){
-    .fruit-card{
+    .Flower-card{
         
         margin-bottom:10px;
        
     }
 }
 @media screen and  (min-width:1200px){
-    .fruit-card{
+    .Flower-card{
         margin-bottom:100px;
     }
 }

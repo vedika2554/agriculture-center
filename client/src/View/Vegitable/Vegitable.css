@@ -7,17 +7,15 @@
 .flower-tital{
     text-align: center;
     margin-bottom: -10px;
-    font-size: 30px;
 }
 .flower-tital1{
     text-align: center;
     margin-top: -1440px;
-    font-size: 30px;
+    
 }
 .flower-tital2{
     text-align: center;
     margin-top: 780px;
-    font-size: 30px;
 }
 @media screen and  (min-width:394px){
     .flower-tital{
@@ -26,12 +24,12 @@
     }
     .flower-tital1{
         position: relative;
-        top:-3610px;
+        top:-3460px;
        
     }
     .flower-tital2{
         
-        margin-top: -1115px;
+        margin-top: -1055px;
         position: relative;
         bottom: 10px;
         
@@ -40,11 +38,11 @@
 @media screen and  (min-width:1200px){
     .flower-tital1{
         position: relative;
-        top:-50px;
+        top:-30px;
     }
     .flower-tital2{
         
-        margin-top: 660px;
+        margin-top: 670px;
         
     }
 }

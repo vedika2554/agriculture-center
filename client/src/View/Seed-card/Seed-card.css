@@ -4,16 +4,16 @@
     flex-wrap: wrap;
 
 }
-.seed-title{
+.seed-tital{
     text-align: center;
     margin-bottom: -10px;
 }
-.seed-title1{
+.seed-tital1{
     text-align: center;
     margin-top: -1440px;
     
 }
-.seed-title2{
+.seed-tital2{
     text-align: center;
     margin-top: 780px;
 }
@@ -22,16 +22,16 @@
 
 
 @media screen and  (min-width:394px){
-    .seed-title{
+    .seed-tital{
        
         margin-bottom: -10px;
     }
-    .seed-title1{
+    .seed-tital1{
         position: relative;
         top:-3570px;
        
     }
-    .seed-title2{
+    .seed-tital2{
         
         margin-top: -1055px;
         position: relative;
@@ -40,11 +40,11 @@
     }
 }
 @media screen and  (min-width:1200px){
-    .seed-title1{
+    .seed-tital1{
         position: relative;
         top:-30px;
     }
-    .seed-title2{
+    .seed-tital2{
         
         margin-top: 670px;
         
