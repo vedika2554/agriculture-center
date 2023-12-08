@@ -7,6 +7,8 @@ import Fruit from './View/Fruit/Fruit';
 import Flowers from './View/Flowers/Flowers'
 import Seeds from './View/Seed-card/Seed-card'
 import Nearbystore from './View/Nearbystore/Nearbystore'
+import Buy from './View/Buy/Buy'
+import MyOrders from './View/Myorder/Myorder';
 
 
 
@@ -31,6 +33,14 @@ const router = createBrowserRouter([
   {
     'path': "/seeds",
      'element': <Seeds/>
+  },
+  {
+    'path': "/buy/:id",
+     'element': <Buy/>
+  },
+  {
+    'path': "/myorder",
+     'element': <MyOrders/>
   }
 
 ])

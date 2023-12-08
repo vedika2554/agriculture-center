@@ -5,6 +5,7 @@ import "./Buy.css";
 
 export default function Buy(){
     const {id} = useParams();
+    const [user, setUser] = useState({});
     const [product,setProduct] = useState({});
     const [quantity,setQuantity] = useState(1);
     const [shippingAddress,setShippingAddress] = useState('');
@@ -14,10 +15,14 @@ export default function Buy(){
         if(!id){
             window.location.href = "/";
         }
-        const response = await axios.get(`/flower/${id}`)
+
+         const response = await axios.get(`/flowers/${id}`)
+     
 
         setProduct(response.data.data);
     };
+
+
 
     const increase = async()=>{
         setQuantity(quantity+1);
