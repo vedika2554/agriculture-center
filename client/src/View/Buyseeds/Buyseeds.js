@@ -50,29 +50,36 @@ export default function Buy(){
         window.location.href = "/orders"
     }
     return(
-        <div className="buy-container">
-            <img src={seed.image} alt={seed.name} className="buy-product-img"/>
+        <div className="seedbuy-container">
+            <img src={seed.image} alt={seed.name} className="seedbuy-product-img"/>
             <div>
-                <h1>{seed.name}</h1>
-                <p>{seed.description}</p>
-                <h1>{seed.price}</h1>
+                <h1>Name : {seed.name}</h1>
+                <p>Description : {seed.description}</p>
+                <h1>Price : ₹ {seed.price}</h1>
 
-            <div className="qt-container">
-                <span className="quantity-btn" onClick={decrease}>-</span>
-                <span className="quantity-text">{quantity} </span>
-                <span className="quantity-btn" onClick={increase}>+</span>
+            <div className="seedqt-container">
+            <span className="seedquantity-text">Quantity : </span>
+                <span className="seedquantity-btn" onClick={decrease}>-</span>
+                <span className="seedquantity-text">{quantity} </span>
+                <span className="seedquantity-btn" onClick={increase}>+</span>
             </div>
-
+            <h1>Photo : </h1>
+            <div className="seedphotocontainer">
+            <img src={seed.image1} className="seedphoto"/> 
+            <img src={seed.image2} className="seedphoto"/> 
+            <img src={seed.image3} className="seedphoto"/> 
+            </div>
+            <h1>Address : </h1>
             <input type="text"
                 placeholder="shippingAddress"
-                className="shippingAddress"
+                className="seedshippingAddress"
                 value={shippingAddress}
                 onChange={(e)=>{
                     setShippingAddress(e.target.value);
                 }}
                 />
 
-                <button className="Buy-btn" type="button" onClick={placeorder}>PlaceOrder</button>
+                <button className="seedBuy-btn" type="button" onClick={placeorder}>PlaceOrder</button>
             </div>
         </div>
     )

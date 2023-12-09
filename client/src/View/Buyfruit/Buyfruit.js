@@ -50,29 +50,36 @@ export default function Buy(){
         window.location.href = "/orders"
     }
     return(
-        <div className="buy-container">
-            <img src={fruit.image} alt={fruit.name} className="buy-product-img"/>
+        <div className="fruitbuy-container">
+            <img src={fruit.image} alt={fruit.name} className="fruitbuy-product-img"/>
             <div>
-                <h1>{fruit.name}</h1>
-                <p>{fruit.description}</p>
-                <h1>{fruit.price}</h1>
+                <h1>Name : {fruit.name}</h1>
+                <p>Description : {fruit.description}</p>
+                <h1>Price : ₹ {fruit.price}</h1>
 
-            <div className="qt-container">
-                <span className="quantity-btn" onClick={decrease}>-</span>
-                <span className="quantity-text">{quantity} </span>
-                <span className="quantity-btn" onClick={increase}>+</span>
+            <div className="fruitqt-container">
+            <span className="fruitquantity-text">Quantity : </span>
+                <span className="fruitquantity-btn" onClick={decrease}>-</span>
+                <span className="fruitquantity-text">{quantity} </span>
+                <span className="fruitquantity-btn" onClick={increase}>+</span>
             </div>
-
+            <h1>Photo : </h1>
+            <div className="fruitphotocontainer">
+            <img src={fruit.image1} className="fruitphoto"/> 
+            <img src={fruit.image2} className="fruitphoto"/> 
+            <img src={fruit.image3} className="fruitphoto"/> 
+            </div>
+            <h1>Address : </h1>
             <input type="text"
                 placeholder="shippingAddress"
-                className="shippingAddress"
+                className="fruitshippingAddress"
                 value={shippingAddress}
                 onChange={(e)=>{
                     setShippingAddress(e.target.value);
                 }}
                 />
 
-                <button className="Buy-btn" type="button" onClick={placeorder}>PlaceOrder</button>
+                <button className="fruitBuy-btn" type="button" onClick={placeorder}>PlaceOrder</button>
             </div>
         </div>
     )

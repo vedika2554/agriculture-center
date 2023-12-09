@@ -761,13 +761,16 @@ res.json({
 
 //post api for vegitable
 app.post('/vegitable', async (req, res) => {
-  const {name, price, description, image} = req.body;
+  const {name, price, description, image,image1,image2,image3} = req.body;
 
   const vegitable = new Vegitable({
     name:name,
     description: description,
     price: price,
-    image: image
+    image: image,
+    image1: image1,
+    image2: image2,
+    image3: image3,
   });
 
 
@@ -831,13 +834,17 @@ app.delete('/vegitable/:id', async (req, res)=>{
 
 app.put('/vegitable/:id', async (req, res)=>{
   const {id} = req.params;
-  const { name, price, description, image } = req.body;
+  const { name, price, description, image,image1,image2,image3 } = req.body;
 
   await Vegitable.updateOne({_id: id}, {$set:{
       name: name,
       price: price,
       description: description,
-      image: image
+      image: image,
+      image1: image1,
+      image2: image2,
+      image3: image3,
+
 }});
 const updatedVegitable = await Vegitable.findOne({_id: id});
 
@@ -847,6 +854,16 @@ res.json({
   message: 'Vegitable update successfully'
 })
 })
+
+
+
+
+
+
+
+
+
+
 
 
 const PORT = 5000;
