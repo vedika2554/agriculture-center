@@ -28,7 +28,7 @@ import Vegitable from './View/Vegitable/Vegitable'
 
 import Buy from './View/Buy/Buy'
 //import MyOrders from './View/Myorder/Myorder';
-
+import Buyvegetable from './View/Buyvegetable/Buyvegetable'
 
 
 const router = createBrowserRouter([
@@ -85,8 +85,11 @@ const router = createBrowserRouter([
   {
     'path': "/nearbystore",
      'element': <Nearbystore/>
-  }
-
+  },
+{
+  'path': "/buyvegetable/:id",
+  'element': <Buyvegetable/>
+}
 
 ])
 

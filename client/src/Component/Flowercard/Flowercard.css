@@ -1,10 +1,10 @@
 .Flower-card{
-    background-color:#ffd9cc;
+    background-color : #f8e2d3;
     border-radius: 20px;
     border: 1px solid black;
     margin: 10px;
     padding:10px;
-    width: 300px;
+    width: 330px;
     margin-bottom:100px;
     margin-top: 50px;
     
@@ -24,18 +24,20 @@
     margin-top: 20px;
     text-align: center;
     color: brown;
+    font-size: 23px;
 }
 .flower-price{
     margin-top: 20px;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: cornflowerblue;
+    color: #f8e2d3;
 }
 .flower-description{
     margin: 10px;
     margin-bottom: 60px;
     text-align: justify;
     color: brown;
+    font-size: 15px;
 }
 .flower-shop-now{
     background-color:cornflowerblue;
@@ -45,7 +47,7 @@
     padding-right: 20px;
     border-radius: 25px;
     border: none;
-    color: brown;
+    color: #f8e2d3;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: none;
     margin-left: 80px;
@@ -63,4 +65,7 @@
     .Flower-card{
         margin-bottom:100px;
     }
+
 }
+
+

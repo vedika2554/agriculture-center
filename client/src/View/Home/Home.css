@@ -1,33 +1,74 @@
+
+
 body
 {
-  background-color: rgb(236, 249, 217);
   margin: 0;
   padding: 0;
-  padding-top: 60px;
+  background-color: #ff80b3;
 }
 
-.card
-{
-  height:350px;
-  width: 250px;
-  background-color: black border 1px solid gray;
-  border-radius: 5px;
-  box-shadow: 0px 1px 3px black;
-  margin-top: 30px ;
+.container-home{
+   color: white;
+   height: 500px;
+   display: flex;
+   justify-content: space-around;
 }
-.Container{
-display: flex;
-justify-content: space-around;
+
+
+.container-s-img{
+  margin-top: 50px;
+  height: 400px;
+  width: 600px;
+  border-radius: 20px;
 }
-.title
-{
-  font-size: 2.8em;
-  letter-spacing: 1px;
-  margin: 48px auto;
-  color: aliceblue;
+.c-btn{
+  background-color: pink;
+  margin: 10px;
+  border-radius: 40px;
+  border: none;
+  padding: 5px;
+  width: 120px;
+  margin-top: 60px;
 }
-.adjust
-{
-  max-width: 50%;
-  padding: 0 64px;
+.info-content{
+  margin-top: 50px;
+  margin-right: 150px;
+}
+
+.card-h{
+  
+  display: flex;
+  justify-content: space-around;
+  border: none;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+.card{
+  margin-top: 50px;
+  display: flexbox;
+  justify-content: space-around;
+  height: 750px;
+  width: 430px;
+  
+}
+.card-1{
+  margin: 10px;
+  width: 400px;
+  height: 390px;
+  background-color: #f8e2d3;
+  box-shadow: 2px 2px 3px black;
+}
+.card-img{
+  height: 170px;
+  width: 370px;
+  margin-left: 15px;
+}
+.head{
+  text-align: center;
+  font-size: 30px;
+  color: brown;
+}
+.c-text{
+  padding: 8px;
+  color: brown;
 }
