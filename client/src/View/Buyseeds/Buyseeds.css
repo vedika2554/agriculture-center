@@ -38,16 +38,20 @@ p {
     align-items: center;
     margin-bottom: 20px;
     position: relative;
-    left: -23px;
+    left: -30px;
 }
 
 .seedquantity-btn {
     cursor: pointer;
     background-color: #3498db;
     color: #fff;
-    padding: 10px;
-    border-radius: 4px;
-    margin: 0 5px;
+    padding: 0px;
+    height:40px;
+    width: 40px;
+    border-radius: 40px;
+    font-size: 25px;
+    text-align: center;
+   
     transition: background-color 0.3s;
 }
 
@@ -58,7 +62,7 @@ p {
 .seedquantity-text {
     font-size: 18px;
     font-weight: bold;
-    margin: 0 px;
+    margin: 0 10px;
 }
 
 .seedshippingAddress {
@@ -83,6 +87,8 @@ p {
 .seedBuy-btn:hover {
     background-color: #219653;
 }
+
+
 .seedphotocontainer{
     display: flex;
     position: relative;
