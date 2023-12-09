@@ -1,5 +1,5 @@
 import ReactDOM from 'react-dom/client';
-import Home from './Views/Home/Home';
+import Home from './View/Home/Home';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
 

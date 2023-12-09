@@ -5,7 +5,8 @@ import "./Buy.css";
 
 export default function Buy(){
     const {id} = useParams();
-    const [product,setProduct] = useState({});
+    //const [fruits,setFruits] = useState({});
+    const [flowers,setFlowers] = useState({});
     const [quantity,setQuantity] = useState(1);
     const [shippingAddress,setShippingAddress] = useState('');
 
@@ -14,9 +15,9 @@ export default function Buy(){
         if(!id){
             window.location.href = "/";
         }
-        const response = await axios.get(`/flower/${id}`)
+        const response = await axios.get(`/flowers/${id}`)
 
-        setProduct(response.data.data);
+        setFlowers(response.data.data);
     };
 
     const increase = async()=>{
@@ -35,7 +36,7 @@ export default function Buy(){
 
     const placeorder =async()=>{
         const response = await axios.post("/order",{
-            product:product,
+            flowers:flowers,
             user:user._id,
             quantity:quantity,
             shippingAddress:shippingAddress,
@@ -46,11 +47,11 @@ export default function Buy(){
     }
     return(
         <div className="buy-container">
-            <img src={product.image} alt={product.name} className="buy-product-img"/>
+            <img src={flowers.image} alt={flowers.name} className="buy-product-img"/>
             <div>
-                <h1>{product.name}</h1>
-                <p>{product.description}</p>
-                <h1>{product.price}</h1>
+                <h1>{flowers.name}</h1>
+                <p>{flowers.description}</p>
+                <h1>{flowers.price}</h1>
 
             <div className="qt-container">
                 <span className="quantity-btn" onClick={decrease}>-</span>
