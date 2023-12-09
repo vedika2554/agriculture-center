@@ -1,4 +1,4 @@
-.buy-container {
+.flowersbuy-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -9,15 +9,16 @@
     background-color: #fff;
 }
 
-.buy-product-img {
-    width: 400px;
-    height: 400px;
+.flowerbuy-product-img {
+    width: 390px;
+    height: 390px;
     object-fit: cover;
     border-radius: 8px;
+   
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.buy-container div {
+.flowersbuy-container div {
     max-width: 500px;
     margin-left: 20px;
 }
@@ -33,14 +34,16 @@ p {
     color: #666;
     margin-bottom: 20px;
 }
-.qt-container {
+.flowerqt-container {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    position: relative;
+    left: -30px;
   
 }
 
-.quantity-btn {
+.flowerquantity-btn {
     cursor: pointer;
     background-color: #3498db;
     color: #fff;
@@ -50,17 +53,16 @@ p {
     transition: background-color 0.3s;
 }
 
-.quantity-btn:hover {
+.flowerquantity-btn:hover {
     background-color: #2980b9;
 }
-
-.quantity-text {
+.flowerquantity-text {
     font-size: 18px;
     font-weight: bold;
     margin: 0 10px;
 }
 
-.shippingAddress {
+.flowershippingAddress {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -68,7 +70,7 @@ p {
     border-radius: 4px;
 }
 
-.Buy-btn {
+.flowerBuy-btn {
     cursor: pointer;
     background-color: #27ae60;
     color: #fff;
@@ -79,7 +81,7 @@ p {
     transition: background-color 0.3s;
 }
 
-.Buy-btn:hover {
+.flowerBuy-btn:hover {
     background-color: #219653;
 }
 .flowerphotocontainer{
@@ -88,60 +90,7 @@ p {
     left: -60px;
 }
 .flowerphoto{
-    width: 130px;
-    margin-left: 30px;
-}
-
-
-
-@media screen and  (min-width:394px){
-    .buy-container {
-        flex-direction: column;
-    }
-    .buy-product-img {
-        width: 350px;
-        height: 350px;
-    }
-    .h3{
-        font-size: 2px;
-        margin-left: 90px;
-      
-    }
-    .buy-container div{
-        max-width: 390;
-        
-    }
-    .flowerphotocontainer{
-        flex-direction: column;
-        margin-left: 0px;
-    }
-    .flowerphoto{
-        width: 300px;
-        margin-top: 30px;
-       margin-left: 70px;
-    }
-}
-@media screen and  (min-width:1200px){
-    .buy-container {
-        flex-direction: row;
-    }
-    .buy-product-img {
-        width: 390px;
-        height: 390px;
-    }
-   .h3{
-    font-size: 24px;
-   }
-   .buy-container div{
-    max-width: 500;
-}
-.flowerphotocontainer{
-    flex-direction: row;
-    left: -60px;
-}
-.flowerphoto{
     width: 180px;
     margin-left: 30px;
-    margin-top: 0px;
 }
-}
+
