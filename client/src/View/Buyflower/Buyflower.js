@@ -50,33 +50,36 @@ export default function Buy(){
         window.location.href = "/orders"
     }
     return(
-        <div className="buy-container">
-            <img src={flowers.image} alt={flowers.name} className="buy-product-img"/>
+        <div className="flowersbuy-container">
+            <img src={flowers.image} alt={flowers.name} className="flowerbuy-product-img"/>
             <div>
-                <h3>{flowers.name}</h3>
-                <p>{flowers.description}</p>
-                <h4>{flowers.price}</h4>
+                <h3>Name : {flowers.name}</h3>
+                <p>Description : {flowers.description}</p>
+                <h4>Price : ₹ {flowers.price}</h4>
 
-            <div className="qt-container">
-                <span className="quantity-btn" onClick={decrease}>-</span>
-                <span className="quantity-text">{quantity} </span>
-                <span className="quantity-btn" onClick={increase}>+</span>
+            <div className="flowerqt-container">
+            <span className="flowerquantity-text">Quantity : </span>
+                <span className="flowerquantity-btn" onClick={decrease}>-</span>
+                <span className="flowerquantity-text">{quantity} </span>
+                <span className="flowerquantity-btn" onClick={increase}>+</span>
             </div>
+            <h1>Photo : </h1>
             <div className="flowerphotocontainer">
             <img src={flowers.image1} className="flowerphoto"/> 
             <img src={flowers.image2} className="flowerphoto"/> 
             <img src={flowers.image3} className="flowerphoto"/> 
             </div>
+            <h1>Address : </h1>
             <input type="text"
                 placeholder="shippingAddress"
-                className="shippingAddress"
+                className="flowershippingAddress"
                 value={shippingAddress}
                 onChange={(e)=>{
                     setShippingAddress(e.target.value);
                 }}
                 />
 
-                <button className="Buy-btn" type="button" onClick={placeorder}>PlaceOrder</button>
+                <button className="flowerBuy-btn" type="button" onClick={placeorder}>PlaceOrder</button>
             </div>
         </div>
     )

@@ -1,4 +1,4 @@
-.buy-container {
+.vegetablebuy-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -9,7 +9,7 @@
     background-color: #fff;
 }
 
-.buy-product-img {
+.vegetablebuy-product-img {
     width: 390px;
     height: 390px;
     object-fit: cover;
@@ -17,7 +17,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.buy-container div {
+.vegetablebuy-container div {
     max-width: 500px;
     margin-left: 20px;
 }
@@ -26,6 +26,7 @@ h1 {
     font-size: 24px;
     margin-bottom: 10px;
     color: #333;
+    margin-top: 20px;
 }
 
 p {
@@ -33,41 +34,49 @@ p {
     color: #666;
     margin-bottom: 20px;
 }
-.qt-container {
+.vegetableqt-container {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    position: relative;
+    left: -30px;
+    text-align: center;
 }
 
-.quantity-btn {
+.vegetablequantity-btn {
     cursor: pointer;
     background-color: #3498db;
     color: #fff;
-    padding: 10px;
-    border-radius: 4px;
-    margin: 0 5px;
+    padding: 0px;
+    height:40px;
+    width: 40px;
+    border-radius: 40px;
+    font-size: 25px;
+    text-align: center;
+   
     transition: background-color 0.3s;
 }
 
-.quantity-btn:hover {
+.vegetablequantity-btn:hover {
     background-color: #2980b9;
 }
 
-.quantity-text {
+.vegetablequantity-text {
     font-size: 18px;
     font-weight: bold;
     margin: 0 10px;
 }
 
-.shippingAddress {
+.vegetableshippingAddress {
     width: 100%;
     padding: 10px;
+    margin-top: 20px;
     margin-bottom: 20px;
     border: 1px solid #ddd;
     border-radius: 4px;
 }
 
-.Buy-btn {
+.vegetableBuy-btn {
     cursor: pointer;
     background-color: #27ae60;
     color: #fff;
@@ -78,6 +87,16 @@ p {
     transition: background-color 0.3s;
 }
 
-.Buy-btn:hover {
+.vegetableBuy-btn:hover {
     background-color: #219653;
 }
+.vegetablephotocontainer{
+    display: flex;
+    position: relative;
+    left: -60px;
+}
+.vegetablephoto{
+    width: 180px;
+    margin-left: 30px;
+}
+

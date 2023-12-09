@@ -50,29 +50,37 @@ export default function Buy(){
         window.location.href = "/orders"
     }
     return(
-        <div className="buy-container">
-            <img src={vegetable.image} alt={vegetable.name} className="buy-product-img"/>
+        <div className="vegetablebuy-container">
+            <img src={vegetable.image} alt={vegetable.name} className="vegetablebuy-product-img"/>
             <div>
-                <h1>{vegetable.name}</h1>
-                <p>{vegetable.description}</p>
-                <h1>{vegetable.price}</h1>
+                <h1>Name : {vegetable.name}</h1>
+                <p>Description : {vegetable.description}</p>
+                <h1>Price : ₹ {vegetable.price}</h1>
 
-            <div className="qt-container">
-                <span className="quantity-btn" onClick={decrease}>-</span>
-                <span className="quantity-text">{quantity} </span>
-                <span className="quantity-btn" onClick={increase}>+</span>
+            <div className="vegetableqt-container">
+            <span className="vegetablequantity-text">Quantity : </span>
+                <span className="vegetablequantity-btn" onClick={decrease}>-</span>
+                <span className="vegetablequantity-text">{quantity} </span>
+                <span className="vegetablequantity-btn" onClick={increase}>+</span>
             </div>
-
+            <h1>Photo : </h1>
+            <div className="vegetablephotocontainer">
+            <img src={vegetable.image1} className="vegetablephoto"/> 
+            <img src={vegetable.image2} className="vegetablephoto"/> 
+            <img src={vegetable.image3} className="vegetablephoto"/> 
+            </div>
+            <h1>Address : </h1>
             <input type="text"
+            
                 placeholder="shippingAddress"
-                className="shippingAddress"
+                className="vegetableshippingAddress"
                 value={shippingAddress}
                 onChange={(e)=>{
                     setShippingAddress(e.target.value);
                 }}
                 />
 
-                <button className="Buy-btn" type="button" onClick={placeorder}>PlaceOrder</button>
+                <button className="vegetableBuy-btn" type="button" onClick={placeorder}>PlaceOrder</button>
             </div>
         </div>
  )
