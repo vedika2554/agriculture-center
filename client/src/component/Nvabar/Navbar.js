@@ -8,7 +8,7 @@ function BasicExample() {
   return (
     <Navbar expand="lg" className="bg">
       <Container >
-        <Navbar.Brand href="#home"><span className='navbrand1'>Agro</span><span className='navbrand2'>Geniius</span><span className='navbrand3'>Hub</span></Navbar.Brand>
+        <Navbar.Brand href="#home"><span className='navbrand1'>Agro</span><span className='navbrand2'>Genius</span><span className='navbrand3'>Hub</span></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
