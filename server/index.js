@@ -2,6 +2,8 @@ import express from 'express';
 import dotenv from 'dotenv';
 dotenv.config();
 import mongoose from 'mongoose';
+ 
+import User from './models/User.js';
 
 import Nearbystore from './model/Nearbystore.js';
 
@@ -576,6 +578,63 @@ app.delete('/flowers/:id', async (req, res) => {
             })
           })
 
+
+
+
+          //post api for signup 
+
+
+          app.post("/signup",async(req,res)=>{
+            const{name,email,mobile,password}=req.body;
+          
+            const user = new User({
+              
+                name:name,
+                email:email,
+                mobile:mobile,
+                password:password
+            
+            });
+            try{
+          const savedUser =await user.save();
+          
+          return res.json({
+            success:true,
+            data:savedUser,
+            message:"User registered successfully"
+          })
+            }
+            catch(e){
+              return res.json({
+                success:false,
+                message:e.message
+              })
+            }
+          
+          })
+          
+
+          //post api for login
+          app.post("/login",async(req,res)=>{
+           const {email,password}=req.body;
+          
+          const user = await User.findOne({email:email,password:password});
+          if (user){
+            return res.json({
+              success:true,
+              data:user,
+              message:"User logged in successfully"
+            })
+          }
+          else
+          {
+            return res.json({
+              success:false,
+              message:"Invalid email or password"
+            })
+          }
+          })
+          
           //  post api for order 
 
 

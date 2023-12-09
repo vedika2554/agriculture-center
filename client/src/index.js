@@ -28,7 +28,13 @@ import Vegitable from './View/Vegitable/Vegitable'
 
 import Buy from './View/Buy/Buy'
 //import MyOrders from './View/Myorder/Myorder';
+
+
+import Signup from './View/Signup/Signup'
+import Login from './View/Login/Login'
+
 import Buyvegetable from './View/Buyvegetable/Buyvegetable'
+
 
 
 const router = createBrowserRouter([
@@ -86,10 +92,21 @@ const router = createBrowserRouter([
     'path': "/nearbystore",
      'element': <Nearbystore/>
   },
+
+
+  {
+    'path': "/signup",
+     'element': <Signup/>
+  },
+  {
+    'path': "/login",
+     'element': <Login/>
+  },
 {
   'path': "/buyvegetable/:id",
   'element': <Buyvegetable/>
 }
+
 
 ])
 
