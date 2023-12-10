@@ -39,7 +39,7 @@ function Footer(){
           <div class="footer-col">
             <h4>Newsletter</h4>
             <p>
-              Subscribe to our booking website for a weekly dose
+              Subscribe to our AgroGeniusHub website for a weekly dose
               of offers, updates, helpful tips, and
               exclusive offers.
             </p>
