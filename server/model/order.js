@@ -1,7 +1,7 @@
 import { Schema, model } from "mongoose";
  
 const orderShema = new Schema({
-    product:{
+    flower:{
         type:Schema.Types.ObjectId,
         ref: 'Product',
     },

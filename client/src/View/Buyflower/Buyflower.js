@@ -39,7 +39,7 @@ export default function Buy(){
 
 
     const placeorder =async()=>{
-        const response = await axios.post("/flowerorder",{
+        const response = await axios.post("/myorders",{
             flowers:flowers,
             user:user._id,
             quantity:quantity,
