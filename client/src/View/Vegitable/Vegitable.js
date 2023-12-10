@@ -3,6 +3,7 @@ import VegitableCard from '../../Component/Vegitablecard/Vegitablecard';
 import axios from 'axios'
 import './Vegitable.css'
 import Navbar from "./../../Component/Nvabar/Navbar";
+import Footer  from '../../Component/Footers/footer';
 function Vegitable(){
 
     const[vegitable, setVegitable] = useState([]);
@@ -19,6 +20,7 @@ function Vegitable(){
 return(
 <>
 <Navbar/>
+<div className="vegitable">
 <h1 className="vegitable-tital">Summer vegitable</h1>
 
 <div className="vegitable-container">
@@ -36,8 +38,8 @@ return(
         
          
         <h1 className="vegitable-tital2">Winter vegitable</h1> 
-        
-        
+        </div>
+        <Footer/>
 </>
 )
 }

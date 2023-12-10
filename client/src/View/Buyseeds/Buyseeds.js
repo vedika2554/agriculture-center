@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import "./Buyseeds.css";
 import Navbar from "./../../Component/Nvabar/Navbar";
+import Footer  from '../../Component/Footers/footer';
 export default function Buy(){
     const {id} = useParams();
     const [user, setUser] = useState({});
@@ -84,6 +85,7 @@ export default function Buy(){
                 <button className="seedBuy-btn" type="button" onClick={placeorder}>PlaceOrder</button>
             </div>
         </div>
+      <Footer/>
       </>
     )
 }

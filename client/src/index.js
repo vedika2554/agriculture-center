@@ -17,7 +17,7 @@ import Nearbystore from './View/Nearbystore/Nearbystore'
 
 import Vegitable from './View/Vegitable/Vegitable'
 
-import Buy from './View/Buy/Buy'
+
 //import MyOrders from './View/Myorder/Myorder';
 import About from './View/About/About';
 
@@ -74,11 +74,7 @@ const router = createBrowserRouter([
     'path':"/vegitable",
     'element': <Vegitable/>
   },
-  {
 
-    'path': "/buy",
-     'element': <Buy/>
-  },
   {
     'path': "/nearbystore",
      'element': <Nearbystore/>
