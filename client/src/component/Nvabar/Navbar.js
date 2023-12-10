@@ -5,10 +5,11 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import './Navbar.css'
 import 'bootstrap/dist/css/bootstrap.css'
 function BasicExample() {
+
   return (
     <Navbar expand="lg" className="bg">
       <Container >
-        <Navbar.Brand href="#home"><span className='navbrand1'>Agro</span><span className='navbrand2'>Geniius</span><span className='navbrand3'>Hub</span></Navbar.Brand>
+        <Navbar.Brand href="#home"><span className='navbrand1'>Agro</span><span className='navbrand2'>Genius</span><span className='navbrand3'>Hub</span></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
@@ -22,9 +23,24 @@ function BasicExample() {
             
               <NavDropdown.Item href="/vegitable">Vegetable</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="/"><span className='nav-menu'>About</span></Nav.Link>
+
+
+
+
+
+            <NavDropdown title="About" id="basic-nav-dropdown"className='nav-menu'>
+              <NavDropdown.Item href="/about">Team members</NavDropdown.Item>
+              <NavDropdown.Item href="/nearbystore">
+                Nearbystore
+              </NavDropdown.Item>
+            
+            </NavDropdown>
+
+
+
+
             <Nav.Link href="/login"><span className='login'>Login</span></Nav.Link>
-            <Nav.Link href="/signin"><span className='Signup'>Signup</span></Nav.Link>
+            <Nav.Link href="/signup"><span className='Signup'>Signup</span></Nav.Link>
          
           </Nav>
         </Navbar.Collapse>

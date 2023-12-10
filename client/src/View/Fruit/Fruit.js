@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import FruitCard from '../../Component/Fruitcard/Fruitcard'
 import axios from 'axios'
 import './Fruit.css'
+import Navbar from "./../../Component/Nvabar/Navbar";
 function Fruit(){
 
     const[fruit, setFruit] = useState([]);
@@ -17,6 +18,7 @@ function Fruit(){
 
 return(
 <>
+<Navbar/>
 <h1 className="fruit-tital">Summer fruits</h1>
 
 <div className="fruit-container">

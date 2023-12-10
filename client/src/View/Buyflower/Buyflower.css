@@ -1,4 +1,6 @@
 .flowersbuy-container {
+    margin-top: 55px;
+    margin-bottom: 55px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -6,7 +8,7 @@
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
+    background-color: #fff5cc ;
 }
 
 .flowerbuy-product-img {
@@ -23,15 +25,15 @@
     margin-left: 20px;
 }
 
-h3 {
+h1 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: #333;
+    color:  #004080;
 }
 
 p {
     font-size: 16px;
-    color: #666;
+    color:   #b30000;
     margin-bottom: 20px;
 }
 .flowerqt-container {
@@ -45,21 +47,26 @@ p {
 
 .flowerquantity-btn {
     cursor: pointer;
-    background-color: #3498db;
-    color: #fff;
-    padding: 10px;
-    border-radius: 4px;
-    margin: 0 5px;
+    background-color: #cc6600;
+    color: #fff5cc;
+    padding: 0px;
+    height:40px;
+    width: 40px;
+    border-radius: 40px;
+    font-size: 25px;
+    text-align: center;
+   
     transition: background-color 0.3s;
 }
 
 .flowerquantity-btn:hover {
-    background-color: #2980b9;
+    background-color: #b30000;
 }
 .flowerquantity-text {
     font-size: 18px;
     font-weight: bold;
     margin: 0 10px;
+    color: #b30000;
 }
 
 .flowershippingAddress {
@@ -68,12 +75,17 @@ p {
     margin-bottom: 20px;
     border: 1px solid #ddd;
     border-radius: 4px;
+    background-color:  #b30000;
+    color: #fff5cc;
+}
+.flowershippingAddress::placeholder{
+    color: #fff5cc;
 }
 
 .flowerBuy-btn {
     cursor: pointer;
-    background-color: #27ae60;
-    color: #fff;
+    background-color: #cc6600;
+    color: #fff5cc;
     padding: 15px;
     border: none;
     border-radius: 4px;
@@ -82,7 +94,7 @@ p {
 }
 
 .flowerBuy-btn:hover {
-    background-color: #219653;
+    background-color: #004080;
 }
 .flowerphotocontainer{
     display: flex;
@@ -92,5 +104,6 @@ p {
 .flowerphoto{
     width: 180px;
     margin-left: 30px;
+    mix-blend-mode:darken;
 }
 
