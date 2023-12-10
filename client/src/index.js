@@ -1,7 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-
-
 import Home from './View/Home/Home';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
@@ -10,6 +8,9 @@ import Buyfruit from './View/Buyfruit/Buyfruit'
 import Buyseeds from './View/Buyseeds/Buyseeds'
 import Detailnearbystore from './View/Detailnearbystore/Detailnearbystore'
 
+
+
+
 import Fruit from './View/Fruit/Fruit';
 import Flowers from './View/Flowers/Flowers'
 import Seeds from './View/Seed-card/Seed-card'
@@ -17,7 +18,7 @@ import Nearbystore from './View/Nearbystore/Nearbystore'
 
 import Vegitable from './View/Vegitable/Vegitable'
 
-import Buy from './View/Buy/Buy'
+
 import About from './View/About/About';
 
 import Signup from './View/Signup/Signup'
@@ -25,6 +26,11 @@ import Login from './View/Login/Login'
 
 import Buyvegetable from './View/Buyvegetable/Buyvegetable'
 import MyOrders from './View/Myorder/Myorder';
+
+import FlowerOrders from './View/Myorder/FlowerOrders';
+import FruitOrders from './View/Myorder/FruitOrders';
+import SeedsOrders from './View/Myorder/SeedOrders';
+import VegetableOrders from './View/Myorder/VegetableOrders';
 
 
 
@@ -74,11 +80,24 @@ const router = createBrowserRouter([
     'path':"/vegitable",
     'element': <Vegitable/>
   },
-  {
 
-    'path': "/buy",
-     'element': <Buy/>
+  {
+    "path":"/orders",
+    "element": <FlowerOrders/>
   },
+  {
+    "path":"/orders",
+    "element": <FruitOrders/>
+  },
+  {
+    "path":"/orders",
+    "element": <SeedsOrders/>
+  },
+  {
+    "path":"/orders",
+    "element": <VegetableOrders/>
+  },
+
   {
     'path': "/nearbystore",
      'element': <Nearbystore/>
