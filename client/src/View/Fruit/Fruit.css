@@ -7,15 +7,17 @@
 .fruit-tital{
     text-align: center;
     margin-bottom: -10px;
+    font-size: 30px;
 }
 .fruit-tital1{
     text-align: center;
     margin-top: -1440px;
-    
+    font-size: 30px;
 }
 .fruit-tital2{
     text-align: center;
     margin-top: 780px;
+    font-size: 30px;
 }
 
 
@@ -28,12 +30,12 @@
     }
     .fruit-tital1{
         position: relative;
-        top:-3570px;
+        top:-3720px;
        
     }
     .fruit-tital2{
         
-        margin-top: -1055px;
+        margin-top: -1115px;
         position: relative;
         bottom: 10px;
         
@@ -42,11 +44,11 @@
 @media screen and  (min-width:1200px){
     .fruit-tital1{
         position: relative;
-        top:-30px;
+        top:-90px;
     }
     .fruit-tital2{
         
-        margin-top: 670px;
+        margin-top: 660px;
         
     }
 }

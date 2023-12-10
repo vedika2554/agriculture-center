@@ -1,23 +1,60 @@
-.Nav-Container
-{
-    height:30px;
-    background-color:green;
-    color:  rgb(113, 190, 113);
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    text-align: right;
+.bg{
+    background-color:  #f8e2d3;
+}
+.navbrand1{
+    color: brown;
     font-size: 30px;
-    margin-right: 20px;
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    
 }
-.Nav-heading
-{
- margin: 20px;
- text-decoration: none;
+.navbrand2{
+    color: cornflowerblue;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ 
+}
+.navbrand3{
+    color: black;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ margin-right: 50px;
+}
+.nav-menu{
+    color:  #503716;
+    font-size: 20px;
+    margin-left: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.login{
+ 
+    font-size: 23px;
+    color: cornflowerblue;
+}
+.Signup{
+   margin-left: 27px;
+    font-size: 23px;
+    color: cornflowerblue;
+}
+@media screen and  (min-width:375px){
+    .login{
+        margin-left: 27px;  
+    }
+}
+@media screen and  (min-width:1200px){
+    .login{
+        margin-left: 550px;  
+    }
+}
+.nav-menu:hover{
+    text-decoration: underline;
+    color: cornflowerblue;
+}
+.login:hover{
+    color: #503716;
+    text-decoration: underline;
+}
+.Signup:hover{
+    color: #503716;
+    text-decoration: underline;
+
 }

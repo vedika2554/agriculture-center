@@ -10,7 +10,7 @@ function FruitCard({id, name, price, description, image})
             <h2 className="fruit-name">{name}</h2>
             <h3 className="fruit-price">Price :  ₹ {price}</h3>
             <p className="fruit-description">{description}</p>
-            <Link  className="fruit-shop-now"to={`/buy/${id}`}>Shop now</Link>
+            <Link  className="fruit-shop-now"to={`/buyfruit/${id}`}>Shop now</Link>
 
         </div>
     )
