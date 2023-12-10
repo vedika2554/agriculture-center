@@ -1,15 +1,17 @@
-.sign-up-title{
-    text-align:center;
-}
-.sign-up-container{
-    background-color:#fff;
-    width:400px;
+.signup-container{
+    background-color: #ffd9cc;
+    height: 650px;
+    width: 500px; 
     margin:30px auto;
     box-shadow:0 0 10px rgba(0,0,0,0.3);
     padding:20px 40px;
     border-radius:15px ;
 }
-.input-label{
+.signup-title{
+    text-align:center;
+    font-size: 40px;
+}
+.input-container{
     display:block;
     font-size:22px;
 }
@@ -19,14 +21,14 @@
     border:1px solid #ccc;
     border-radius:5px;
 }
-.input-container{
-    margin:20px auto;
-}
-.sign-up-btn{
-    background-color:#000;
+.signup-btn{
+    background-color:chocolate;
     color:#fff;
     font-size:24px;
-    padding:10px 50px;
     border-radius:30px;
     display:block;
+    border: none;
+    margin: 0 auto;
+    height: 50px;
+    width: 160px;
 }

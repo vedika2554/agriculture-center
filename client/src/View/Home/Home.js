@@ -2,11 +2,7 @@ import React from 'react';
 
 import Navbar from "./../../Component/Nvabar/Navbar";
 import "./Home.css";
-
-// import Footer from './../../Component/Footer/Footer';
-
-
-
+import Footer  from '../../Component/Footers/footer';
 
 
 function Home() {
@@ -76,6 +72,7 @@ function Home() {
         
 
             </div>
+            <Footer/>
 
        
   </>

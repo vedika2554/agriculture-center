@@ -1,7 +1,8 @@
 
 .login-container{
-    background-color:#fff;
+    background-color:#ffd9cc;
     width:400px;
+    height: 430px;
     margin:30px auto;
     box-shadow:0 0 10px rgba(0,0,0,0.3);
     padding:20px 40px;
@@ -9,6 +10,7 @@
 }
 .login-title{
     text-align:center;
+    font-size: 40px;
 }
 .input-label{
     display:block;
@@ -22,12 +24,16 @@
 }
 .input-container{
     margin:20px auto;
+    margin-bottom: 40px;
 }
 .login-btn{
-    background-color:#000;
+    background-color:chocolate;
     color:#fff;
     font-size:24px;
-    padding:10px 50px;
     border-radius:30px;
     display:block;
+    border: none;
+    margin: 0 auto;
+    height: 50px;
+    width: 160px;
 }

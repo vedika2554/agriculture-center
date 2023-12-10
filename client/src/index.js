@@ -5,19 +5,10 @@ import ReactDOM from 'react-dom/client';
 import Home from './View/Home/Home';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
-
-
-
-
-
-
 import Buyflower from './View/Buyflower/Buyflower'
 import Buyfruit from './View/Buyfruit/Buyfruit'
 import Buyseeds from './View/Buyseeds/Buyseeds'
 import Detailnearbystore from './View/Detailnearbystore/Detailnearbystore'
-
-
-
 
 import Fruit from './View/Fruit/Fruit';
 import Flowers from './View/Flowers/Flowers'
@@ -28,7 +19,7 @@ import Vegitable from './View/Vegitable/Vegitable'
 
 import Buy from './View/Buy/Buy'
 //import MyOrders from './View/Myorder/Myorder';
-
+import About from './View/About/About';
 
 import Signup from './View/Signup/Signup'
 import Login from './View/Login/Login'
@@ -105,6 +96,10 @@ const router = createBrowserRouter([
 {
   'path': "/buyvegetable/:id",
   'element': <Buyvegetable/>
+},
+{
+  'path': "/about",
+  'element': <About/>
 }
 
 

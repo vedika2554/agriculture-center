@@ -22,9 +22,9 @@ function BasicExample() {
             
               <NavDropdown.Item href="/vegitable">Vegetable</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="/"><span className='nav-menu'>About</span></Nav.Link>
+            <Nav.Link href="/about"><span className='nav-menu'>About</span></Nav.Link>
             <Nav.Link href="/login"><span className='login'>Login</span></Nav.Link>
-            <Nav.Link href="/signin"><span className='Signup'>Signup</span></Nav.Link>
+            <Nav.Link href="/signup"><span className='Signup'>Signup</span></Nav.Link>
          
           </Nav>
         </Navbar.Collapse>

@@ -9,9 +9,11 @@ function Signup(){
     const[password,setPassword]=useState('')
 
     const signup=async() =>{
-        const res=await axios.post("/login",{
+        const res=await axios.post("/signup",{
             email:email,
-            password:password
+            password:password,
+            mobile:mobile,
+            name:name
         });
         alert(res.data.message);
 
@@ -81,7 +83,7 @@ function Signup(){
                      />
                 </div>
 
-<button type='button' className='signup-btn' onClick={signup}>Signup</button>
+        <button type='button' className='signup-btn' onClick={signup}>Signup</button>
             </div>
         </div>
     )
