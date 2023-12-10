@@ -5,8 +5,11 @@ import linkedin from './linked-in.png'
 import Snehal from './snehal.jpg'
 import Navbar from '../../Component/Nvabar/Navbar'
 import Achal from './achal.jpg'
+import Pravin from './Pravin.png'
 import Vedika from './vedika.jpg'
+import Shanzey from './shanzey.jpg'
 import Footer  from '../../Component/Footers/footer';
+import Atharva from './atharva.jpg'
 
 function About()
 {
@@ -78,7 +81,7 @@ function About()
 
         <div className='main-div'>
             <div className='sub-div'>
-                <img src={Achal} className='team-imgs'/>
+                <img src={Shanzey} className='team-imgs'/>
                 <h2 className='name-heading'>Shanzey Shaikh</h2>
                 <p className = 'team-description' > Persuing B.C.A from G H Raisoni </p> 
                 <p className = 'team-description' > Institute of Engineering & Technology </p>
@@ -98,7 +101,7 @@ function About()
 
 
             <div className='sub-div'>
-                <img src={Achal} className='team-imgs'/>
+                <img src={Pravin} className='team-imgs'/>
                 <h2 className='name-heading'>Pravin</h2>
                 <p className = 'team-description' > Persuing B.C.A from G H Raisoni </p> 
                 <p className = 'team-description' > Institute of Engineering & Technology </p>
@@ -118,7 +121,7 @@ function About()
 
 
             <div className='sub-div'>
-                <img src={Achal} className='team-imgs'/>
+                <img src={Atharva} className='team-imgs'/>
                 <h2 className='name-heading'>Atharva</h2>
                 <p className = 'team-description' > Persuing M.C.A from G H Raisoni </p> 
                 <p className = 'team-description' > Institute of Engineering & Technology </p>

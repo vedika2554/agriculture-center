@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import SeedCard from '../../Component/Seedcard/Seedcard'
 import axios from 'axios'
 import './Seed-card.css'
-import { checkLogin } from "../../utils/auth";
 import Navbar from "./../../Component/Nvabar/Navbar";
 function Seed(){
 
@@ -14,7 +13,6 @@ function Seed(){
     }
 
     useEffect(()=>{
-        checkLogin();
         loadSeed();
     })
 
