@@ -85,7 +85,7 @@ const router = createBrowserRouter([
   },
   {
 
-    'path': "/buy/:id",
+    'path': "/buy",
      'element': <Buy/>
   },
   {

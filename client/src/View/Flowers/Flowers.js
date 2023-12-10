@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import FlowerCard from '../../Component/Flowercard/Flowercard';
 import axios from 'axios'
 import './Flowers.css'
+import Navbar from "./../../Component/Nvabar/Navbar";
 function Flowers(){
 
     const[flower, setFlower] = useState([]);
@@ -16,7 +17,8 @@ function Flowers(){
     })
 
 return(
-<><h1 className="flower-tital">Summer</h1>
+<><Navbar/>
+<h1 className="flower-tital">Summer flowers</h1>
 <div className="flowers-container">
         {
             flower?.map((flower, index)=>{
@@ -26,8 +28,8 @@ return(
             })
         }
         </div>
-        <h1 className="flower-tital1">Mansoom</h1>
-        <h1 className="flower-tital2">Winter</h1>
+        <h1 className="flower-tital1">Mansoom flowers</h1>
+        <h1 className="flower-tital2">Winter flowers</h1>
 </>
 )
 }

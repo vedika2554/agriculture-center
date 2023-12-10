@@ -1,26 +1,30 @@
 .bg{
-    background-color:  #f8e2d3;
+    background-color:  #fff5cc;
 }
 .navbrand1{
-    color: brown;
+    color: #b30000;
     font-size: 30px;
+    
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    
 }
 .navbrand2{
-    color: cornflowerblue;
+    color: #004080 ;
     font-size: 30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
  
 }
 .navbrand3{
-    color: black;
+    color:   #cc6600;
     font-size: 30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
  margin-right: 50px;
 }
+#basic-nav-dropdown{
+    color:    #004080;
+}
 .nav-menu{
-    color:  #503716;
+    color:    #004080;
     font-size: 20px;
     margin-left: 30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -28,12 +32,14 @@
 .login{
  
     font-size: 23px;
-    color: cornflowerblue;
+    color:  #b30000;
+    font-weight: bolder;
 }
 .Signup{
    margin-left: 27px;
     font-size: 23px;
-    color: cornflowerblue;
+    color: #b30000;
+    font-weight: bolder;
 }
 @media screen and  (min-width:375px){
     .login{
@@ -47,14 +53,17 @@
 }
 .nav-menu:hover{
     text-decoration: underline;
-    color: cornflowerblue;
+    color: #b30000;
 }
 .login:hover{
-    color: #503716;
+    color: #004080 ;
     text-decoration: underline;
 }
 .Signup:hover{
-    color: #503716;
+    color: #004080 ;
     text-decoration: underline;
 
+}
+#basic-nav-dropdown:hover{
+    color: #b30000;
 }

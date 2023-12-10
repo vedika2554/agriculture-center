@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import "./Detailnearbystore.css";
-
+import Navbar from './../../Component/Nvabar/Navbar'
 export default function Buy(){
     const {id} = useParams();
     const [user, setUser] = useState({});
@@ -35,16 +35,18 @@ export default function Buy(){
 
    
     return(
+        <>
+        <Navbar/>
         <div className="buy-container">
             <img src={store.image} alt={store.name} className="buy-product-img"/>
             <div >
-                <h3>Company information</h3>
-                <h4>Name : {store.name}</h4>
+                <h1 className="cname">Company information</h1>
+                <h3>Name : {store.name}</h3>
                 <p>Description : {store.description}</p>
-                <h4>Contact NO : {store.mobile}</h4>
-                <h5>Timing : {store.hours}</h5>
+                <h3 className="noname">Contact No : {store.mobile}</h3>
+                <h3>Timing : {store.hours}</h3>
                 <p>Visit us : {store.url}</p>
-                <h1>Photo</h1>
+                <h1 className="pho">Photo</h1>
                 <div className="nearbyphotocontainer">
                     <img src={store.image1}className="nearbyphoto"/>
                     <img src={store.image2}className="nearbyphoto"/>
@@ -57,5 +59,6 @@ export default function Buy(){
                 
             </div>
         </div>
+      </>
     )
 }
