@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import SeedCard from '../../Component/Seedcard/Seedcard'
 import axios from 'axios'
 import './Seed-card.css'
+import Navbar from "./../../Component/Nvabar/Navbar";
 function Seed(){
 
     const[seed, setSeed] = useState([]);
@@ -17,6 +18,7 @@ function Seed(){
 
 return(
 <>
+<Navbar/>
 <h1 className="seed-tital">Summer seeds</h1>
 
 <div className="seed-container">

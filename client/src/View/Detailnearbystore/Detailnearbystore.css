@@ -1,4 +1,6 @@
 .buy-container {
+    margin-top: 55px;
+    margin-bottom: 55px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -6,7 +8,7 @@
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
+    background-color: #fff5cc ;
 }
 
 .buy-product-img {
@@ -26,12 +28,13 @@
 h3 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: #333;
+    color:  #004080;
 }
 
 p {
     font-size: 16px;
-    color: #666;
+    color:   #b30000;
+    font-weight: 400;
     margin-bottom: 20px;
 }
 .nearbyphotocontainer{
@@ -44,4 +47,15 @@ p {
     width: 180px;
     margin-left: 30px;
 }
-
+.cname{
+    color: #cc6600;
+    font-weight: bold;
+}
+.noname{
+    color: #cc6600;
+    font-weight: bold;
+}
+.pho{
+    color: #cc6600;
+    font-weight: bold;
+}

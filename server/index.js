@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 import mongoose from 'mongoose';
  
-import User from './models/User.js';
+import User from './model/User.js';
 
 import Nearbystore from './model/Nearbystore.js';
 
