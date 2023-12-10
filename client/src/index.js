@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Home from './Views/Home/Home';
+import Home from './View/Home/Home';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
 
@@ -14,7 +14,10 @@ import Buyfruit from './View/Buyfruit/Buyfruit'
 import Buyseeds from './View/Buyseeds/Buyseeds'
 import Detailnearbystore from './View/Detailnearbystore/Detailnearbystore'
 
-
+import FlowerOrders from './View/Myorder/FlowerOrders';
+import FruitOrders from './View/Myorder/FruitOrders'
+import SeedsOrders from './View/Myorder/SeedOrders';
+import VegetableOrders from './View/Myorder/VegetableOrders';
 
 
 import Fruit from './View/Fruit/Fruit';
@@ -80,6 +83,24 @@ const router = createBrowserRouter([
     'path': "/buy/:id",
      'element': <Buy/>
   },
+
+  {
+    "path":"/orders",
+    "element": <FlowerOrders/>
+  },
+  {
+    "path":"/orders",
+    "element": <FruitOrders/>
+  },
+  {
+    "path":"/orders",
+    "element": <SeedsOrders/>
+  },
+  {
+    "path":"/orders",
+    "element": <VegetableOrders/>
+  },
+
   {
     'path': "/nearbystore",
      'element': <Nearbystore/>
