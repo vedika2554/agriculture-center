@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import "./Buyfruit.css";
-
+import Navbar from './../../Component/Nvabar/Navbar'
 export default function Buy(){
     const {id} = useParams();
     const [user, setUser] = useState({});
@@ -49,7 +49,8 @@ export default function Buy(){
         alert(response.data.message);
         window.location.href = "/orders"
     }
-    return(
+    return(<>
+    <Navbar/>
         <div className="fruitbuy-container">
             <img src={fruit.image} alt={fruit.name} className="fruitbuy-product-img"/>
             <div>
@@ -82,5 +83,6 @@ export default function Buy(){
                 <button className="fruitBuy-btn" type="button" onClick={placeorder}>PlaceOrder</button>
             </div>
         </div>
+      </>
     )
 }

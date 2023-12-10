@@ -1,6 +1,7 @@
 import React ,{useState} from 'react';
 import "./Signup.css";
 import axios from 'axios';
+import Navbar from "./../../Component/Nvabar/Navbar";
 function Signup(){
 
     const[name,setName]=useState('')
@@ -26,6 +27,8 @@ function Signup(){
 
     }
     return(
+        <>
+        <Navbar/>
         <div>
             <div className='signup-container'>
                 <h1 className='signup-title'>Signup</h1>
@@ -86,6 +89,7 @@ function Signup(){
         <button type='button' className='signup-btn' onClick={signup}>Signup</button>
             </div>
         </div>
+        </>
     )
 }
 export default Signup

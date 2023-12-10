@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Carousel from 'react-bootstrap/Carousel';
 import Navbar from "./../../Component/Nvabar/Navbar";
 import "./Home.css";
 import Footer  from '../../Component/Footers/footer';
@@ -10,27 +10,58 @@ function Home() {
     return (
 
         <>
-        <div>
-            <Navbar />
-           
-            <div className='container-home'>
-                
-                <div>
-                    <img src='https://tse1.mm.bing.net/th?id=OIP.ADxbxfNWjCnbsap-1FQZlgHaEo&pid=Api&P=0&h=180' alt='' className='container-s-img'/>
-                </div>
-                <div className='info-content'>
-                    <h2>Agriculture center </h2>
-                    <h1>30%-60% off</h1>
-                    <h2>Up to 12 months exchange offer</h2>
-                    <h2>No cost emi schedule delivery</h2>
-                    <h2>Combo offer big delivery</h2>
-                    <button type='button' className='c-btn'> Shop Now</button> 
-                    <button type='button' className='c-btn'> Shop Now</button>
-
-                </div>
+          <Navbar />
+        <div className='home'>
           
-            
-            </div>
+           
+            <Carousel data-bs-theme="dark">
+            <Carousel.Item>
+        <img
+          className="image1"
+          src="https://img.freepik.com/premium-photo/bouquet-colorful-pink-orange-roses-mix-flowers-spring-floral-background-wallpaper_407348-1261.jpg?w=2000"
+          alt="First slide"
+        />
+        <Carousel.Caption>
+          <h5 className='slide-tital'>Flowers</h5>
+          <p className='slide-description1'>In all plants, a flower is usually its most colourful part. We say the plant 'flowers', 'is flowering' or 'is in flower' when this colourful part begins to grow bigger and open out.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="image1"
+          src="https://lifecareus.com/wp-content/uploads/2022/06/LARGE-bigstock-Slices-Pieces-Whole-Ripe-Cit-394772279.jpg"
+          alt="First slide"
+        />
+        <Carousel.Caption>
+          <h5 className='slide-tital'>Fruits</h5>
+          <p className='slide-description2'>Fruits are good source of vitamins and minerals and are a readily available source. A fruit will boost you instantly.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="image1"
+          src="https://wallpapercave.com/wp/wp4184188.jpg"
+          alt="Second slide"
+        />
+        <Carousel.Caption>
+          <h5 className='slide-tital'>Vegetables</h5>
+          <p className='slide-description3'>Vegetables are a rich source of folate, a B vitamin that helps your body make new red blood cells. Folate is especially important for children's health and may also reduce the risk of cancer and depression.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="image1"
+          src="https://www.thespruce.com/thmb/jYHYJfM37wRP-Fo-QIpVAuxcFR0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/seed-saving-tips-1402414-01-1106495ede874681a06403826da56637.jpg"
+          alt="Third slide"
+        />
+        <Carousel.Caption>
+          <h5 className='slide-tital'>Seeds</h5>
+          <p className='slide-description4'>
+          Seeds are an important source of food for people and animals. Seeds used for food are often called grains or beans. People also use seeds to make oils, spices, fabric dye, and jewelry.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
 
            <div className='card-h'> 
             <div className='card'>

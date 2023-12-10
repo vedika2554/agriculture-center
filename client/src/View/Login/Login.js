@@ -1,7 +1,7 @@
 import React , {useState} from 'react'
 import axios from 'axios'
 import "./Login.css"
-
+import Navbar from "./../../Component/Nvabar/Navbar";
 function Login(){
 
     const[email,setEmail]=useState('');
@@ -22,6 +22,8 @@ function Login(){
 
     }
     return(
+        <>
+        <Navbar/>
         <div>
         <div className='login-container'>
             <h1 className='login-title'>Login</h1>
@@ -54,6 +56,8 @@ function Login(){
 
                      <button type='button' className='login-btn' onClick={login}>Login</button>
             </div></div>
+            </>
     )
 }
+
 export default Login

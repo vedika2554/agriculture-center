@@ -4,36 +4,16 @@ body
 {
   margin: 0;
   padding: 0;
+
   background-color: #ebd1db;
+
+  background-color:#00334d;
 }
 
-.container-home{
-   color: white;
-   height: 500px;
-   display: flex;
-   justify-content: space-around;
+.home{
+  height: 230vh;
 }
 
-
-.container-s-img{
-  margin-top: 50px;
-  height: 400px;
-  width: 600px;
-  border-radius: 20px;
-}
-.c-btn{
-  background-color: pink;
-  margin: 10px;
-  border-radius: 40px;
-  border: none;
-  padding: 5px;
-  width: 120px;
-  margin-top: 60px;
-}
-.info-content{
-  margin-top: 50px;
-  margin-right: 150px;
-}
 
 .card-h{
   
@@ -45,37 +25,94 @@ body
 }
 .card{
   margin-top: 50px;
-  display: flexbox;
+  display: flex;
   justify-content: space-around;
-  height: 750px;
-  width: 430px;
+  background-color: #00334d ;
+  border: none;
+  
+ 
   
 }
 .card-1{
   margin: 10px;
   width: 400px;
   height: 390px;
-  background-color: #f8e2d3;
-  box-shadow: 2px 2px 3px black;
+  margin-top: 40px;
+  background-color:  #fff5cc;
+ 
+  
 }
 .card-img{
   height: 170px;
   width: 370px;
   margin-left: 15px;
+  
 }
 .head{
   text-align: center;
   font-size: 30px;
-  color: brown;
+  color: #cc6600;
+  font-weight: bold;
 }
 .c-text{
   padding: 8px;
-  color: brown;
+  color: #004080;
+  font-weight: 500;
 }
 
-@media screen and  (min-width:370px){
-  
-}
-@media screen and  (min-width:1200px){
 
+.image1{
+  margin-top: 50px;
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ width:900px;
+ opacity: 0.6;
+}
+.slide-tital{
+  position: relative;
+  top: -290px;
+  color:  #b30000;
+  font-weight: bold;
+  font-size: 35px;
+}
+.slide-description1{
+  position: relative;
+  top: -250px;
+  left: 120px;
+ text-align: center;
+  color: #fff5cc;
+  font-weight: bold;
+  max-width: 800px;
+  font-size: 20px;
+}
+.slide-description2{
+  position: relative;
+  top: -250px;
+  left: 120px;
+ text-align: center;
+  color: #fff5cc;
+  font-weight: bold;
+  max-width: 800px;
+  font-size: 20px;
+}
+.slide-description3{
+  position: relative;
+  top: -250px;
+  left: 120px;
+ text-align: center;
+  color: #fff5cc;
+  font-weight: bold;
+  max-width: 800px;
+  font-size: 20px;
+}
+.slide-description4{
+  position: relative;
+  top: -250px;
+  left: 120px;
+ text-align: center;
+  color: #fff5cc;
+  font-weight: bold;
+  max-width: 800px;
+  font-size: 20px;
 }

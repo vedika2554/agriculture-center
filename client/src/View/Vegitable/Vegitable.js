@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import VegitableCard from '../../Component/Vegitablecard/Vegitablecard';
 import axios from 'axios'
 import './Vegitable.css'
+import Navbar from "./../../Component/Nvabar/Navbar";
 function Vegitable(){
 
     const[vegitable, setVegitable] = useState([]);
@@ -17,10 +18,10 @@ function Vegitable(){
 
 return(
 <>
+<Navbar/>
+<h1 className="vegitable-tital">Summer vegitable</h1>
 
-<h1 className="flower-tital">Summer</h1>
-
-<div className="flowers-container">
+<div className="vegitable-container">
 
         {
             vegitable?.map((vegitable, index)=>{
@@ -31,10 +32,10 @@ return(
         }
         </div>
        
-         <h1 className="flower-tital1">Mansoom</h1>
+         <h1 className="vegitable-tital1">Mansoom vegitable</h1>
         
          
-        <h1 className="flower-tital2">Winter</h1> 
+        <h1 className="vegitable-tital2">Winter vegitable</h1> 
         
         
 </>

@@ -1,5 +1,5 @@
 .Nearby-card{
-    background-color:#ffd9cc;
+    background-color : #fff5cc;
     border-radius: 20px;
     border: 1px solid black;
     margin: 10px;
@@ -23,7 +23,7 @@
 .Nearby-name{
     margin-top: 20px;
     text-align: center;
-    color: brown;
+    color: #004080;
     font-size: 23px;
 }
 
@@ -31,21 +31,25 @@
     margin: 10px;
     margin-bottom: 60px;
     text-align: justify;
-    color: brown;
+    color:#cc6600;
+    font-weight: 400;
     font-size: 15px;
 }
 .Nearby-shop-now{
-    background-color:cornflowerblue;
+    background-color:#004080;;
     font-size: 25px;
     padding: 10px;
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 25px;
     border: none;
-    color: brown;
+    color:  #fff5cc;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: none;
     margin-left: 80px;
     position: relative;
     top:-20px;
+}
+.Nearby-shop-now:hover{
+background-color: #b30000;
 }

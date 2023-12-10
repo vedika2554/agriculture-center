@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Nearbycard from './../../Component/Nearbycard/Nearbycard'
 import axios from 'axios'
 import './Nearbystore.css'
+import Navbar from "./../../Component/Nvabar/Navbar";
 function Store(){
 
     const[store, setStore] = useState([]);
@@ -16,7 +17,9 @@ function Store(){
     })
 
 return(
-<><h1 className="Nearby-tital">Nearby stores</h1>
+<>
+<Navbar/>
+<h1 className="Nearby-tital">Nearby stores</h1>
 <div className="Nearby-container">
         {
             store?.map((store, index)=>{

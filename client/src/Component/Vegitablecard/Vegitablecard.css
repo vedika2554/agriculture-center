@@ -1,9 +1,7 @@
 
-.Flower-card{
-    background-color:#f8e2d3;
-}
+
 .vegetable-card{
-    background-color:#ffd9cc;
+    background-color : #fff5cc;
     border-radius: 20px;
     border: 1px solid black;
     margin: 10px;
@@ -29,28 +27,29 @@
 .vegetable-name{
     margin-top: 20px;
     text-align: center;
-    color: brown;
+    color: #004080;
     font-size: 23px;
 }
 .vegetable-price{
     margin-top: 20px;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: cornflowerblue;
+    color:#cc6600;
 }
 .vegetable-description{
     margin: 10px;
     margin-bottom: 60px;
     text-align: justify;
-    color: brown;
+    color: #004080;
+    font-weight: 400;
     font-size: 15px;
 }
 
-.flower-shop-now{
-    background-color:#cc6600;
-}
+
+   
+
 .vegetable-shop-now{
-    background-color:cornflowerblue;
+    background-color:#cc6600;
 
     font-size: 25px;
     padding: 10px;
@@ -58,7 +57,7 @@
     padding-right: 20px;
     border-radius: 25px;
     border: none;
-    color: brown;
+    color : #fff5cc;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: none;
     margin-left: 80px;
@@ -76,4 +75,7 @@
     .vegetable-card{
         margin-bottom:100px;
     }
+}
+.vegetable-shop-now:hover{
+    background-color: #b30000;
 }
