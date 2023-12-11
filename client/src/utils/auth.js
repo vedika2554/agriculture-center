@@ -1,3 +1,4 @@
+
 export const checkLogin = async ()=>{
     const user =JSON.parse(localStorage.getItem('user'))||null
 
@@ -6,3 +7,4 @@ export const checkLogin = async ()=>{
         window.location.href='/login';
     }
 }
+
