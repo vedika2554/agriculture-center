@@ -1,24 +1,25 @@
-import { Schema , model } from 'mongoose'
+import { Schema, model } from "mongoose";
 
-const fruitsSchema = new Schema({
-    flower: {
+const fruitorderSchema = new Schema({
+    fruit:{
         type: Schema.Types.ObjectId,
-        ref: 'Flower',
+        ref: 'Fruit',
     },
     user: {
         type: Schema.Types.ObjectId,
         ref: 'User',
+
     },
     quantity:{
-        type: Number,
+        type:Number,
         default: 1,
     },
-    shippingAddress: {
-        type: String,
+    shippingAddress:{
+        type:String,
         required: true,
     }
-});
 
-const Fruit = model('Fruit', fruitsSchema);
-
-export default Fruit;
+})
+const Fruitorder = model('Fruitorder',fruitorderSchema)
+ 
+export default Fruitorder;

@@ -16,7 +16,7 @@ function Login(){
         alert(res.data.message);
 
         if(res.data.success){
-            localStorage.setItem("user",JSON.stringify(res.data.user));
+            localStorage.setItem("user",JSON.stringify(res.data.data));
             
             window.location.href="/";
         }

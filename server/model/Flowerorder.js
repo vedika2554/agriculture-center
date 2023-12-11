@@ -1,6 +1,6 @@
 import { Schema , model } from 'mongoose'
 
-const flowerSchema = new Schema({
+const flowerorderSchema = new Schema({
     flower: {
         type: Schema.Types.ObjectId,
         ref: 'Flower',
@@ -19,6 +19,6 @@ const flowerSchema = new Schema({
     }
 });
 
-const Flower = model('Flower', flowerSchema);
+const Flowerorder = model('Flowerorder', flowerorderSchema);
 
-export default Flower;
+export default Flowerorder;

@@ -1,0 +1,65 @@
+
+.myseedorder{
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+  
+}
+.seedordercard{
+    background-color : #fff5cc;
+    border-radius: 20px;
+    border: 1px solid black;
+    margin: 10px;
+    padding:10px;
+    width: 330px;
+    margin-bottom:100px;
+    margin-top: 50px;
+    
+}
+.seedordertital{
+    text-align: center;
+    margin-bottom: -10px;
+    font-size: 30px;
+    color: #b30000;
+    margin-top: 40px;
+}
+.seedimg{
+    margin-top: 20px;
+    height: 260px;
+    width: 260px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    background-color: #f9f5d2;
+}
+.seedname{
+    margin-top: 20px;
+        text-align: center;
+        color: #004080;
+        font-size: 23px;
+}
+.seedprice{
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#cc6600;
+    font-weight:900px;
+}.seedaddress{
+    margin: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #004080;
+    font-weight: 400;
+    font-size: 15px;
+}
+@media screen and  (min-width:375px){
+    .seedordercard{
+        width: 360px;
+    }
+}
+@media screen and  (min-width:1200px){
+    .seedordercard{
+        width: 330px;
+    }
+}

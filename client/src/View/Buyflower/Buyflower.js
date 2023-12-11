@@ -4,10 +4,11 @@ import axios from "axios";
 import "./Buyflower.css";
 import Navbar from "./../../Component/Nvabar/Navbar";
 import Footer  from '../../Component/Footers/footer';
+import{ checkLogin } from "./../../utils/auth"
 export default function Buy(){
     const {id} = useParams();
     const [user, setUser] = useState({});
-    const [flowers,setFlower] = useState({});
+    const [flower,setFlower] = useState({});
     const [quantity,setQuantity] = useState(1);
     const [shippingAddress,setShippingAddress] = useState('');
 
@@ -35,31 +36,34 @@ export default function Buy(){
         }
     }
     useEffect(()=>{
+        checkLogin();
         loadFlower();
+        const user = JSON.parse(localStorage.getItem('user'));
+        setUser(user);
     },[]);
 
 
     const placeorder =async()=>{
         const response = await axios.post("/flowerorder",{
-            flowers:flowers,
+            flower:flower,
             user:user._id,
             quantity:quantity,
             shippingAddress:shippingAddress,
         })
 
         alert(response.data.message);
-        window.location.href = "/orders"
+        window.location.href = "/flowerorder"
     }
     return(
         <>
         <Navbar/>
         <div>
         <div className="flowersbuy-container">
-            <img src={flowers.image} alt={flowers.name} className="flowerbuy-product-img"/>
+            <img src={flower.image} alt={flower.name} className="flowerbuy-product-img"/>
             <div>
-                <h1>Name : {flowers.name}</h1>
-                <p>Description : {flowers.description}</p>
-                <h1>Price : ₹ {flowers.price}</h1>
+                <h1>Name : {flower.name}</h1>
+                <p>Description : {flower.description}</p>
+                <h1>Price : ₹ {flower.price}</h1>
 
             <div className="flowerqt-container">
             <span className="flowerquantity-text">Quantity : </span>
@@ -69,9 +73,9 @@ export default function Buy(){
             </div>
             <h1>Photo : </h1>
             <div className="flowerphotocontainer">
-            <img src={flowers.image1} className="flowerphoto"/> 
-            <img src={flowers.image2} className="flowerphoto"/> 
-            <img src={flowers.image3} className="flowerphoto"/> 
+            <img src={flower.image1} className="flowerphoto"/> 
+            <img src={flower.image2} className="flowerphoto"/> 
+            <img src={flower.image3} className="flowerphoto"/> 
             </div>
             <h1>Address : </h1>
             <input type="text"

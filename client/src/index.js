@@ -26,7 +26,10 @@ import Login from './View/Login/Login'
 
 import Buyvegetable from './View/Buyvegetable/Buyvegetable'
 
-
+import Fruitorder from './View/Fruitorder/Fruitorder'
+import Floweorder from './View/Flowerorder/Flowerorder'
+import Seedorder from './View/Seedorder/Seedorder'
+import Vegtableorder from './View/Vegetableorder/Vegetableorder'
 
 const router = createBrowserRouter([
 
@@ -96,9 +99,23 @@ const router = createBrowserRouter([
 {
   'path': "/about",
   'element': <About/>
-}
-
-
+},
+{
+  'path': "/fruitorder",
+  'element': <Fruitorder/>
+},
+{
+  'path': "/flowerorder",
+  'element': <Floweorder/>
+},
+{
+  'path': "/seedorder",
+  'element': <Seedorder/>
+},
+{
+  'path': "/vegetableorder",
+  'element': <Vegtableorder/>
+},
 ])
 
 

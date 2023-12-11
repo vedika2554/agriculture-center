@@ -1,6 +1,6 @@
 import { Schema, model } from "mongoose";
 
-const fruitsSchema = new Schema({
+const fruitSchema = new Schema({
     image: {
         type:String,
         required:true
@@ -17,19 +17,18 @@ const fruitsSchema = new Schema({
         type:String,
         required:true
     },
-    image1: {
-        type:String,
-        
-    },  image2: {
-        type:String,
-        
-    },  image3: {
-        type:String,
-     
+    image1:{
+        type:String
+    },
+    image2:{
+        type:String
+    },
+    image3:{
+        type:String
     },
 
 });
 
-const Fruits = model('Fruits',fruitsSchema);
+const Fruit = model('Fruit',fruitSchema);
 
-export default Fruits;
+export default Fruit;
