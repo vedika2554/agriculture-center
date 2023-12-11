@@ -44,15 +44,17 @@
     color: #b30000;
     font-weight: bolder;
 }
-@media screen and  (min-width:375px){
+@media screen and  (min-width:370px){
     .login{
         margin-left: 27px;  
     }
+  
 }
 @media screen and  (min-width:1200px){
     .login{
         margin-left: 550px;  
     }
+
 }
 .nav-menu:hover{
     text-decoration: underline;

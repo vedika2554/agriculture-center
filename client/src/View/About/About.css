@@ -1,8 +1,9 @@
 .main-heading{
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     margin-top: 20px;
-    color: chocolate;
+   color:  #b30000;
+   font-weight: bold;
 }
 .main-div{
     height: 500px;
@@ -35,11 +36,13 @@
     line-height: 2;
     text-align: center;
     margin-bottom: 10px;
-    color: #004080;
+    color: #cc6600;
+    font-weight: bold;
 }
 .name-heading{
     text-align: center;
     margin: 10px 0;
+    color: #004080;
 }
 .link-div{
     text-align: center;

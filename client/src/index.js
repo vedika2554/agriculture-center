@@ -30,7 +30,7 @@ import Buyvegetable from './View/Buyvegetable/Buyvegetable'
 
 
 
-import SeedsOrders from './View/Myorder/SeedOrders';
+
 
 
 import Fruitorder from './View/Fruitorder/Fruitorder'
@@ -87,10 +87,7 @@ const router = createBrowserRouter([
 
 
   
-  {
-    "path":"/orders",
-    "element": <SeedsOrders/>
-  },
+  
 
 
   {
