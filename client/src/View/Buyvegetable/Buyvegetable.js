@@ -3,14 +3,16 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import "./Buyvegetable.css";
 import Navbar from "./../../Component/Nvabar/Navbar";
+import Footer  from '../../Component/Footers/footer';
+import{ checkLogin } from "./../../utils/auth"
 export default function Buy(){
     const {id} = useParams();
     const [user, setUser] = useState({});
-    const [vegetable,setVegetable] = useState({});
+    const [vegitable,setVegitable] = useState({});
     const [quantity,setQuantity] = useState(1);
     const [shippingAddress,setShippingAddress] = useState('');
 
-    const loadVegetable = async()=>{
+    const loadVegitable = async()=>{
 
         if(!id){
             window.location.href = "/";
@@ -19,7 +21,7 @@ export default function Buy(){
          const response = await axios.get(`/vegitable/${id}`)
      
 
-        setVegetable(response.data.data);
+        setVegitable(response.data.data);
     };
 
 
@@ -34,31 +36,34 @@ export default function Buy(){
         }
     }
     useEffect(()=>{
-        loadVegetable();
+        checkLogin();
+        loadVegitable();
+        const user = JSON.parse(localStorage.getItem('user'));
+        setUser(user);
     },[]);
 
 
     const placeorder =async()=>{
         const response = await axios.post("/vegetableorder",{
-            vegetable:vegetable,
+            vegitable:vegitable,
             user:user._id,
             quantity:quantity,
             shippingAddress:shippingAddress,
         })
 
         alert(response.data.message);
-        window.location.href = "/orders"
+        window.location.href = "/vegetableorder"
     }
     return(
         <>
         <Navbar/>
         <div className="vegetablebuy-container">
-            <img src={vegetable.image} alt={vegetable.name} className="vegetablebuy-product-img"/>
+            <img src={vegitable.image} alt={vegitable.name} className="vegetablebuy-product-img"/>
             <div>
-                <h1>Name : {vegetable.name}</h1>
-                <p>Description : {vegetable.description}</p>
-                <h1>Price : ₹ {vegetable.price}</h1>
-
+                <h1>Name : {vegitable.name}</h1>
+                <p>Description : {vegitable.description}</p>
+                <h1>Price : ₹ {vegitable.price}</h1>
+                
             <div className="vegetableqt-container">
             <span className="vegetablequantity-text">Quantity : </span>
                 <span className="vegetablequantity-btn" onClick={decrease}>-</span>
@@ -67,9 +72,9 @@ export default function Buy(){
             </div>
             <h1>Photo : </h1>
             <div className="vegetablephotocontainer">
-            <img src={vegetable.image1} className="vegetablephoto"/> 
-            <img src={vegetable.image2} className="vegetablephoto"/> 
-            <img src={vegetable.image3} className="vegetablephoto"/> 
+            <img src={vegitable.image1} className="vegetablephoto"/> 
+            <img src={vegitable.image2} className="vegetablephoto"/> 
+            <img src={vegitable.image3} className="vegetablephoto"/> 
             </div>
             <h1>Address : </h1>
             <input type="text"
@@ -85,6 +90,7 @@ export default function Buy(){
                 <button className="vegetableBuy-btn" type="button" onClick={placeorder}>PlaceOrder</button>
             </div>
         </div>
+      <Footer/>
       </>
  )
 }

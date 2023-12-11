@@ -19,20 +19,24 @@ import Nearbystore from './View/Nearbystore/Nearbystore'
 import Vegitable from './View/Vegitable/Vegitable'
 
 
+
 import About from './View/About/About';
 
 import Signup from './View/Signup/Signup'
 import Login from './View/Login/Login'
 
 import Buyvegetable from './View/Buyvegetable/Buyvegetable'
-import MyOrders from './View/Myorder/Myorder';
 
-import FlowerOrders from './View/Myorder/FlowerOrders';
-import FruitOrders from './View/Myorder/FruitOrders';
+
+
+
 import SeedsOrders from './View/Myorder/SeedOrders';
-import VegetableOrders from './View/Myorder/VegetableOrders';
 
 
+import Fruitorder from './View/Fruitorder/Fruitorder'
+import Floweorder from './View/Flowerorder/Flowerorder'
+import Seedorder from './View/Seedorder/Seedorder'
+import Vegtableorder from './View/Vegetableorder/Vegetableorder'
 
 const router = createBrowserRouter([
 
@@ -81,22 +85,13 @@ const router = createBrowserRouter([
     'element': <Vegitable/>
   },
 
-  {
-    "path":"/orders",
-    "element": <FlowerOrders/>
-  },
-  {
-    "path":"/orders",
-    "element": <FruitOrders/>
-  },
+
+  
   {
     "path":"/orders",
     "element": <SeedsOrders/>
   },
-  {
-    "path":"/orders",
-    "element": <VegetableOrders/>
-  },
+
 
   {
     'path': "/nearbystore",
@@ -121,13 +116,23 @@ const router = createBrowserRouter([
   'element': <About/>
 },
 {
-  'path': "/myorders",
-  'element': <MyOrders/>
-}
 
-
+  'path': "/fruitorder",
+  'element': <Fruitorder/>
+},
+{
+  'path': "/flowerorder",
+  'element': <Floweorder/>
+},
+{
+  'path': "/seedorder",
+  'element': <Seedorder/>
+},
+{
+  'path': "/vegetableorder",
+  'element': <Vegtableorder/>
+},
 ])
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 

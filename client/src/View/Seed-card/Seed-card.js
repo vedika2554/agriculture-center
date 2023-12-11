@@ -3,6 +3,7 @@ import SeedCard from '../../Component/Seedcard/Seedcard'
 import axios from 'axios'
 import './Seed-card.css'
 import Navbar from "./../../Component/Nvabar/Navbar";
+import Footer  from '../../Component/Footers/footer';
 function Seed(){
 
     const[seed, setSeed] = useState([]);
@@ -19,6 +20,7 @@ function Seed(){
 return(
 <>
 <Navbar/>
+<div className="seed">
 <h1 className="seed-tital">Summer seeds</h1>
 
 <div className="seed-container">
@@ -36,8 +38,9 @@ return(
        
         
        <h1 className="seed-tital2">Winter seeds</h1>
+       </div>
       
-
+<Footer/>
 </>
 )
 }

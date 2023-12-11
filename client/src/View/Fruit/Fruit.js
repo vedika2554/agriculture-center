@@ -3,6 +3,7 @@ import FruitCard from '../../Component/Fruitcard/Fruitcard'
 import axios from 'axios'
 import './Fruit.css'
 import Navbar from "./../../Component/Nvabar/Navbar";
+import Footer  from '../../Component/Footers/footer';
 function Fruit(){
 
     const[fruit, setFruit] = useState([]);
@@ -19,6 +20,7 @@ function Fruit(){
 return(
 <>
 <Navbar/>
+<div className="fruit">
 <h1 className="fruit-tital">Summer fruits</h1>
 
 <div className="fruit-container">
@@ -35,8 +37,8 @@ return(
        <h1 className="fruit-tital1">Mansoom fruits</h1>
         
        <h1 className="fruit-tital2">Winter fruits</h1>
-      
-
+      </div>
+<Footer/>
 </>
 )
 }

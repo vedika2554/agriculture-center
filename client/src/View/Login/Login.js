@@ -2,6 +2,7 @@ import React , {useState} from 'react'
 import axios from 'axios'
 import "./Login.css"
 import Navbar from "./../../Component/Nvabar/Navbar";
+import Footer  from '../../Component/Footers/footer';
 function Login(){
 
     const[email,setEmail]=useState('');
@@ -15,7 +16,7 @@ function Login(){
         alert(res.data.message);
 
         if(res.data.success){
-            localStorage.setItem("user",JSON.stringify(res.data.user));
+            localStorage.setItem("user",JSON.stringify(res.data.data));
             
             window.location.href="/";
         }
@@ -56,6 +57,7 @@ function Login(){
 
                      <button type='button' className='login-btn' onClick={login}>Login</button>
             </div></div>
+            <Footer/>
             </>
     )
 }

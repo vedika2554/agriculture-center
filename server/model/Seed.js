@@ -29,6 +29,6 @@ const seedsSchema = new Schema({
     },
 });
 
-const Seeds = model('Seeds', seedsSchema);
+const Seed = model('Seed', seedsSchema);
 
-export default Seeds;
+export default Seed;

@@ -3,6 +3,7 @@ import Nearbycard from './../../Component/Nearbycard/Nearbycard'
 import axios from 'axios'
 import './Nearbystore.css'
 import Navbar from "./../../Component/Nvabar/Navbar";
+import Footer  from '../../Component/Footers/footer';
 function Store(){
 
     const[store, setStore] = useState([]);
@@ -29,7 +30,7 @@ return(
             })
         }
         </div>
-       
+       <Footer/>
 </>
 )
 }

@@ -1,9 +1,9 @@
 import { Schema , model } from 'mongoose'
 
-const vegetableSchema = new Schema({
-    Vegetable: {
+const vegetableorderSchema = new Schema({
+    vegitable: {
         type: Schema.Types.ObjectId,
-        ref: 'Flower',
+        ref: 'Vegitable',
     },
     user: {
         type: Schema.Types.ObjectId,
@@ -17,18 +17,9 @@ const vegetableSchema = new Schema({
         type: String,
         required: true,
     },
-    image1: {
-        type:String,
-        
-    },  image2: {
-        type:String,
-        
-    },  image3: {
-        type:String,
-     
-    },
+ 
 });
 
-const Vegetable = model('Vegetable', vegetableSchema);
+const Vegetableorder = model('Vegetableorder', vegetableorderSchema);
 
-export default Vegetable;
+export default Vegetableorder;

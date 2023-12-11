@@ -3,6 +3,9 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import "./Buyfruit.css";
 import Navbar from './../../Component/Nvabar/Navbar'
+import Footer  from '../../Component/Footers/footer';
+import{ checkLogin } from "./../../utils/auth"
+
 export default function Buy(){
     const {id} = useParams();
     const [user, setUser] = useState({});
@@ -34,7 +37,10 @@ export default function Buy(){
         }
     }
     useEffect(()=>{
+        checkLogin();
         loadFruit();
+        const user = JSON.parse(localStorage.getItem('user'));
+        setUser(user);
     },[]);
 
 
@@ -47,7 +53,7 @@ export default function Buy(){
         })
 
         alert(response.data.message);
-        window.location.href = "/orders"
+        window.location.href = "/fruitorder"
     }
     return(<>
     <Navbar/>
@@ -83,6 +89,7 @@ export default function Buy(){
                 <button className="fruitBuy-btn" type="button" onClick={placeorder}>PlaceOrder</button>
             </div>
         </div>
+      <Footer/>
       </>
     )
 }

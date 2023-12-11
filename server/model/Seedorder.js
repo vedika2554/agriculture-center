@@ -1,9 +1,9 @@
 import { Schema , model } from 'mongoose'
 
-const seedsSchema = new Schema({
+const seedsorderSchema = new Schema({
     seed: {
         type: Schema.Types.ObjectId,
-        ref: 'Flower',
+        ref: 'Seed',
     },
     user: {
         type: Schema.Types.ObjectId,
@@ -19,6 +19,6 @@ const seedsSchema = new Schema({
     }
 });
 
-const Seed = model('Seed', seedsSchema);
+const Seedorder = model('Seedorder', seedsorderSchema);
 
-export default Seed;
+export default Seedorder;

@@ -1,7 +1,5 @@
 .Flower-card{
     background-color : #fff5cc;
-
-    
     border-radius: 20px;
     border: 1px solid black;
     margin: 10px;
@@ -32,9 +30,6 @@
     margin-top: 20px;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-    color: brown;
-
     color:#cc6600;
     font-weight:900px;
 }

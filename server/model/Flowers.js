@@ -30,6 +30,6 @@ const flowersSchema = new Schema({
 
 });
 
-const Flowers = model('Flowers',flowersSchema);
+const Flower = model('Flower',flowersSchema);
 
-export default Flowers;
+export default Flower;

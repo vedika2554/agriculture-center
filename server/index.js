@@ -10,9 +10,9 @@ import User from './model/User.js';
 import Nearbystore from './model/Nearbystore.js';
 
 import Flowers from './model/Flowers.js'
-import Fruits from './model/Fruits.js'
+import Fruits from './model/Fruit.js'
 
-import Seeds from './model/Seeds.js'
+import Seeds from './model/Seed.js'
 
 import Vegitable from './model/Vegitable.js'
 
@@ -437,10 +437,10 @@ app.delete('/flowers/:id', async (req, res) => {
           })
 
           app.post('/vegetableorder', async (req, res) => {
-            const { vegetable, user, quantity, shippingAddress } = req.body;
+            const { vegitable, user, quantity, shippingAddress } = req.body;
 
             const vegetableorder = new Vegetableorder({
-              vegetable: vegetable,
+              vegitable: vegitable,
               user: user,
               quantity: quantity,
               shippingAddress: shippingAddress
@@ -862,6 +862,54 @@ res.json({
 
 
 
+
+app.get('/fruitsorders', async(req, res)=>{
+  const {id} = req.query;
+  
+  const fruitsorders = await Fruitorder.find({user: id}).populate('fruit user')
+
+  res.json({
+      success:true,
+      data: fruitsorders,
+      message: 'orders gets successfully'
+  })
+})
+
+
+
+app.get('/flowersorders', async(req, res)=>{
+  const {id} = req.query;
+  
+  const flowersorders = await Flowerorder.find({user: id}).populate('flower user')
+
+  res.json({
+      success:true,
+      data: flowersorders,
+      message: 'orders gets successfully'
+  })
+})
+
+app.get('/seedsorders', async(req, res)=>{
+  const {id} = req.query;
+  
+  const seedsorders = await Seedorder.find({user: id}).populate('seed user')
+  res.json({
+      success:true,
+      data: seedsorders,
+      message: 'orders gets successfully'
+  })
+})
+
+app.get('/vegitablesorders', async(req, res)=>{
+  const {id} = req.query;
+  
+  const vegitablesorders = await Vegetableorder.find({user: id}).populate('vegitable user')
+  res.json({
+      success:true,
+      data: vegitablesorders,
+      message: 'orders gets successfully'
+  })
+})
 
 
 
