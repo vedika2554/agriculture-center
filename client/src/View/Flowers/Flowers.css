@@ -9,6 +9,7 @@
     margin-bottom: -10px;
     font-size: 30px;
     color: #b30000;
+    font-weight: bold;
     margin-top: 40px;
     
 }
@@ -17,6 +18,7 @@
     margin-top: -1440px;
     font-size: 30px;
     color: #b30000;
+    font-weight: bold;
     
 }
 .flower-tital2{
@@ -24,6 +26,7 @@
     margin-top: 780px;
     font-size: 30px;
     color: #b30000;
+    font-weight: bold;
     
 }
 @media screen and  (min-width:394px){

@@ -3,6 +3,8 @@ import dotenv from 'dotenv';
 dotenv.config();
 import mongoose from 'mongoose';
 
+import path from "path";
+const _dirname = path.resolve();
 
 
 import User from './model/User.js';
@@ -911,7 +913,13 @@ app.get('/vegitablesorders', async(req, res)=>{
   })
 })
 
+if(process.env.NODE_ENV === 'production'){
+  app.use(express.static(path.join(_dirname, '..', 'client', 'build')));
 
+  app.get('*', (req, res)=>{
+      res.sendFile(path.join(_dirname, '..', 'client', 'build', 'index.html'))
+  });
+}
 
 
 

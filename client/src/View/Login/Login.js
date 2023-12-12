@@ -31,7 +31,7 @@ function Login(){
 
 
             <div className='input-container'>
-                    <label className='input-label'>Email</label>
+                    <label className='logininput-label'>Email</label>
                     <input 
                     type='email'
                      placeholder="Enter your email"
@@ -44,7 +44,7 @@ function Login(){
                 </div>
             
             <div className='input-container'>
-                    <label className='input-label'>Password</label>
+                    <label className='logininput-label'>Password</label>
                     <input 
                     type='text'
                      placeholder="Enter your password"

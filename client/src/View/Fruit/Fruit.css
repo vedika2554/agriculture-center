@@ -9,6 +9,7 @@
     margin-bottom: -10px;
     font-size: 30px;
     color: #b30000;
+    font-weight: bold;
     margin-top: 40px;
 }
 .fruit-tital1{
@@ -16,12 +17,14 @@
     margin-top: -1440px;
     font-size: 30px;
     color: #b30000;
+    font-weight: bold;
 }
 .fruit-tital2{
     text-align: center;
     margin-top: 780px;
     font-size: 30px;
     color: #b30000;
+    font-weight: bold;
 }
 .fruit{
     height: 280vh;

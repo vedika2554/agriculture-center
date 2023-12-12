@@ -2,7 +2,7 @@
     background-color: #f9f5d2;
     height: 650px;
     width: 450px; 
-    margin:30px auto;
+    margin:90px auto;
     box-shadow:0 0 10px rgba(0,0,0,0.3);
     padding:20px 40px;
     border-radius:15px ;
@@ -10,20 +10,29 @@
 .signup-title{
     text-align:center;
     font-size: 40px;
+   color: #cc6600;
 }
 .input-container{
     display:block;
     font-size:22px;
 }
 .input-field{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     font-size:24px;
     padding:5px 10px;
     border:1px solid #ccc;
     border-radius:5px;
+    background-color: #b30000;
+}
+.input-field::placeholder
+{
+    color: #f9f5d2;
 }
 .signup-btn{
-    background-color:chocolate;
-    color:#fff;
+    background-color:#cc6600;
+    color: #f9f5d2;
     font-size:24px;
     border-radius:30px;
     display:block;
@@ -31,4 +40,11 @@
     margin: 0 auto;
     height: 50px;
     width: 160px;
+}
+.input-label{
+    margin-left: 30px;
+    color: #004080;
+}
+.signup-btn:hover{
+    background-color:#004080;
 }
