@@ -81,7 +81,7 @@
     background: none;
     width: 100%;
     outline: none;
-    border: 1px solid ;
+   border:none;
     
    background-color:  #b30000;
     padding-left: 10px;
@@ -135,4 +135,22 @@
       
   }
   }
+  .footer-col .social-links a{
+    display: flex;
  
+ 
+    padding-top:5px;
+    padding-right: 5px;
+    margin-left: 30px;
+   margin-top: 5px;
+    line-height: 40px;
+   
+  color:#004080;
+  margin-top: 10px;
+    font-size: 20px;
+    transition: all 0.5s ease;
+    
+  }
+  .footer-col .social-links a:hover{
+    color: #b30000;
+  }

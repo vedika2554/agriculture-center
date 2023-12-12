@@ -35,7 +35,15 @@ function Footer(){
               <li><a href="#">Product</a></li>
             </ul>
           </div> 
-          
+          <div className="footer-col">
+  	 			<h4>follow us</h4>
+  	 			<div className="social-links">
+  	 				<a href="#"><i class="fa-brands fa-facebook"></i></a>
+  	 				<a href="#"><i className="fab fa-twitter"></i></a>
+  	 				<a href="#"><i className="fab fa-instagram"></i></a>
+  	 				<a href="#"><i className="fab fa-linkedin-in"></i></a>
+  	 			</div>
+  	 		</div>
           <div class="footer-col">
             <h4>AgroGeniusHub</h4>
             <p>
@@ -47,12 +55,7 @@ function Footer(){
               <input type="text" placeholder="Enter your email address" required/>
               <button type="submit">SUBSCRIBE</button>
             </form>
-            <div class="icons">
-              <i class="fa-brands fa-facebook-f"></i> 
-              <i class="fa-brands fa-twitter"></i>
-              <i class="fa-brands fa-instagram"></i>
-              <i class="fa-brands fa-youtube"></i>
-            </div>
+         
             </div>   
           </div>
       </section>
