@@ -28,6 +28,7 @@
     justify-content: space-evenly;
     gap: 2rem;
     padding: 60px;
+    
   }
   
   .footer-row .footer-col h4 {
@@ -69,6 +70,7 @@
   }
   .footer-col p:hover {
     color: #b30000;
+    text-align: justify;
   }
   .footer-col form {
     display: flex;
@@ -78,7 +80,7 @@
   .footer-col input {
     height: 40px;
     border-radius: 6px;
-    background: none;
+   
     width: 100%;
     outline: none;
    border:none;
@@ -121,20 +123,6 @@
     color: #fff;
   }
 
-  @media(max-width: 767px){
-    .footer-col{
-      
-      width: 50%;
-      margin-bottom: 30px;
-     
-  }
-  }
-  @media(max-width: 574px){
-    .footer-col{
-      width: 100%;
-      
-  }
-  }
   .footer-col .social-links a{
     display: flex;
  
@@ -154,3 +142,136 @@
   .footer-col .social-links a:hover{
     color: #b30000;
   }
+  @media screen and (min-width:320px ) and (max-width:480px){
+    .footer{
+      width: 100%;
+    margin-top: 640px;
+    }
+    .footer .footer-row {
+      justify-content: left;
+     flex-direction: column;
+    }
+    .footer-row .footer-col h4{
+   justify-content: left;
+    }
+    .footer-col input{
+      width: fit-content;
+    
+      margin-left: -10vw;
+    font-size: 3.9vw;
+    }
+    .footer-col form button{
+      width: fit-content;
+      font-size: 3.9vw;
+      margin-left: 2vw;
+    }
+    .footer-col p{
+      max-width: 480px;
+      text-align:justify;
+      margin-left: -4vh;
+    }
+  }
+  @media screen and (min-width:481px ) and (max-width:768px){
+
+    .footer{
+      width: 100%;
+      margin-top: 660px;
+    }
+    .footer .footer-row {
+      justify-content: left;
+      flex-direction: column;
+      font-size: 20px;
+     
+    }
+    .footer-row .footer-col h4{
+   justify-content: left;
+    }
+    .footer-col input{
+      margin-left: -40px;
+      text-align: center;
+      font-size: 3.9vw;
+      width: 70%;
+    }
+    .footer-col form button{
+      width: fit-content;
+      font-size: 3vw;
+      margin-left: 2vw;
+    }
+    .footer-col p{
+      max-width: 768px;
+      text-align: center;
+      margin-left: -20px;
+      font-size: 18px;
+    }
+  }@media screen and (min-width:769px ) and (max-width:1024px){
+    .footer .footer-row {
+      justify-content: space-evenly;
+      flex-direction: row;
+    margin-left: -40px;
+    }
+    .footer-col p{
+      max-width: 1024px;
+      text-align: center;
+      margin-left: 0px;
+      font-size: 18px;
+    }
+    .footer-row .footer-col h4{
+      text-align: center;
+    }
+    .footer-col input{
+    
+     text-align: center;
+      font-size: 3.9vw;
+      width: 60%;
+    padding-top: 45px;
+    padding-bottom: 15px;
+      margin-left: 10vw;
+      
+    }
+    .footer-col form button{
+      width: fit-content;
+      font-size: 2.5vw;
+      margin-left: 3vw;
+    }
+    .footer-col input::placeholder {
+      position: relative;
+     top: -10px;
+     bottom: 10px;
+  }
+}
+@media screen and (min-width:1025px ) and (max-width:1200px){
+  .footer .footer-row {
+    justify-content: space-evenly;
+    flex-direction: row;
+  margin-left: -40px;
+  }
+  .footer-col p{
+    max-width: 1200px;
+    text-align: center;
+    margin-left: 0px;
+    font-size: 18px;
+  }
+  .footer-row .footer-col h4{
+    text-align: center;
+  }
+  .footer-col input{
+  
+   text-align: center;
+    font-size: 2.9vw;
+    width: 60%;
+  padding-top: 45px;
+  padding-bottom: 15px;
+    margin-left: 10vw;
+    
+  }
+  .footer-col form button{
+    width: fit-content;
+    font-size: 2vw;
+    margin-left: 3vw;
+  }
+  .footer-col input::placeholder {
+    position: relative;
+   top: -10px;
+   bottom: 10px;
+}
+}

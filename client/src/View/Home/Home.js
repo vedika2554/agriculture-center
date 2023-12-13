@@ -23,7 +23,7 @@ function Home() {
         />
         <Carousel.Caption>
           <h5 className='slide-tital'>Flowers</h5>
-          <p className='slide-description1'>In all plants, a flower is usually its most colourful part. We say the plant 'flowers', 'is flowering' or 'is in flower' when this colourful part begins to grow bigger and open out.</p>
+          <p className='slide-description1'> We say the plant 'flowers', 'is flowering' or 'is in flower' when this colourful part begins to grow bigger and open out. </p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -45,7 +45,7 @@ function Home() {
         />
         <Carousel.Caption>
           <h5 className='slide-tital'>Vegetables</h5>
-          <p className='slide-description3'>Vegetables are a rich source of folate, a B vitamin that helps your body make new red blood cells. Folate is especially important for children's health and may also reduce the risk of cancer and depression.</p>
+          <p className='slide-description3'>Vegetables are a rich source of folate, a B vitamin that helps your body make new red blood cells. </p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -57,7 +57,7 @@ function Home() {
         <Carousel.Caption>
           <h5 className='slide-tital'>Seeds</h5>
           <p className='slide-description4'>
-          Seeds are an important source of food for people and animals. Seeds used for food are often called grains or beans. People also use seeds to make oils, spices, fabric dye, and jewelry.
+          Seeds are an important source of food for people and animals. Seeds used for food are often called grains or beans. 
           </p>
         </Carousel.Caption>
       </Carousel.Item>
@@ -86,7 +86,7 @@ function Home() {
                 <h1 className='head'>Seeds</h1>
                     <p className='c-text'>A seed is a basic part of any plant. The ovules after fertilization, develop into seeds. A seed is made up of a seed coat and an embryo. The embryo is made up of a radicle, an embryonal axis.</p>
                
-                    <img src='https://tse2.mm.bing.net/th?id=OIP.l9_PLD4Ya5Ze6LsnjL9lkwHaE7&pid=Api&P=0&h=180' alt='' className='card-img'/>
+                    <img src='https://tse2.mm.bing.net/th?id=OIP.l9_PLD4Ya5Ze6LsnjL9lkwHaE7&pid=Api&P=0&h=180' alt='' className='card-img imgcard'/>
                    
                 </div>
                 <div className='card-1'>
