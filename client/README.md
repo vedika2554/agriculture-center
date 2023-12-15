@@ -1,70 +1,41 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# AgroGeniusHub
 
-## Available Scripts
+- AgroGeniusHub is a full-stack application designed to provide agricultural insights and tools for user. This project includes both server-side and client-side components.
 
-In the project directory, you can run:
+<img src="../client/src/View/About/Screenshot (622).png" />
 
-### `npm start`
+### Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+AgroGeniusHub leverages a full-stack architecture to offer comprehensive agricultural solutions. The project is divided into two main components:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<img src="../client/src/View/About/Screenshot (626).png" />
 
-### `npm test`
+ **Server**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The server-side of AgroGeniusHub manages data, performs computations, and handles requests from the client-side application. Key features and technologies used in the server include:
 
-### `npm run build`
+Framework: Node.js<br/>
+Database: MongoDB<br/>
+APIs: [app.post(),app.get()]
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<img src="../client/src/View/About/Screenshot (627).png" />
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Client**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The client-side of AgroGeniusHub provides a user interface for interacting with the agricultural tools and insights. It communicates with the server-side for data processing and retrieval. Notable aspects of the client-side include:
 
-### `npm run eject`
+Framework: React.js
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Contributing 🔗**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<a href="https://github.com/achalkatkar/agriculture-center/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=achalkatkar/agriculture-center" />
+</a>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+**Contact**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+For any questions, feedback, or issues, please reach out to [AgroGeniusHub].
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
