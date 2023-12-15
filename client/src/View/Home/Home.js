@@ -1,6 +1,6 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import Navbar from "./../../Component/Nvabar/Navbar";
+import Navbar from "../../Component/Nvabar/Navbar";
 import "./Home.css";
 import Footer  from '../../Component/Footers/footer';
 

@@ -1,8 +1,8 @@
 import axios from 'axios';
 import './Flowerorder.css'
 import React, { useEffect, useState } from 'react'
-import Navbar from './../../Component/Nvabar/Navbar'
-import Footer from './../../Component/Footers/footer'
+import Navbar from '../../Component/Nvabar/Navbar'
+import Footer from '../../Component/Footers/footer'
 
 
 
