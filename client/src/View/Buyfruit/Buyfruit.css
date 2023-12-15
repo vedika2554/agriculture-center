@@ -25,13 +25,14 @@
     margin-left: 20px;
 }
 
-h1 {
+.fruitdname{
     font-size: 24px;
     margin-bottom: 10px;
     color:  #004080;
+   
 }
 
-p {
+.fruitdescriptiion{
     font-size: 16px;
     color:   #b30000;
     margin-bottom: 20px;
@@ -48,14 +49,14 @@ p {
     cursor: pointer;
     background-color:  #cc6600;
     color: #fff;
-    padding: 0px;
+    padding: 5px;
     height:40px;
     width: 40px;
     border-radius: 40px;
     font-size: 25px;
     text-align: center;
    
-    transition: background-color 0.3s;
+    
 }
 
 .fruitquantity-btn:hover {
@@ -104,4 +105,101 @@ p {
     width: 180px;
     margin-left: 30px;
     mix-blend-mode:darken;
+}
+@media screen and (min-width:320px ) and (max-width:480px){
+    .fruitbuy-container{
+        flex-direction: column;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .fruitphotocontainer{
+        flex-direction: column;
+        margin-left: 0px;
+       align-items:end;
+        margin: auto;
+    }
+    .fruitbuy-product-img{
+        width: 95%;
+        height: 95%;
+    }
+.fruitphoto{
+    width: 80%;
+}
+.fruitdname{
+   margin-top: 30px;
+    
+}
+.fruitdescriptiion{
+   
+    text-align: justify;
+}
+}
+@media screen and (min-width:481px ) and (max-width:699px){
+    .fruitbuy-container{
+        flex-direction: column;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .fruitphotocontainer{
+        flex-direction: column;
+        margin-left: 0px;
+       align-items:end;
+        margin: auto;
+    }
+    .fruitbuy-product-img{
+        width: 85%;
+        height: 85%;
+    }
+.fruitphoto{
+    width: 70%;
+}
+.fruitdname{
+   margin-top: 30px;
+    font-size: 29px;
+}
+.fruitdescriptiion{
+  font-size: 19px;
+    text-align: justify;
+}
+.fruitquantity-text{
+    font-size: 22px;
+}
+
+}
+@media screen and (min-width:699px ) and (max-width:1024px){
+    .fruitbuy-container{
+        flex-direction: row;
+       
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .fruitphotocontainer{
+        flex-direction:row;
+       left: -30px;
+       align-items:end;
+        margin: auto;
+    }
+    .fruitbuy-product-img{
+      
+        width: 55%;
+        height: 55%;
+    }
+.fruitphoto{
+    width: 38%;
+    margin-left: 0px;
+}
+.fruitdname{
+ 
+    font-size: 24px;
+}
+.fruitdescriptiion{
+  font-size: 16px;
+    text-align: justify;
+}
+.fruitquantity-text{
+    font-size: 18px;
+}
+
 }

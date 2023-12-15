@@ -107,3 +107,105 @@ p {
     mix-blend-mode: darken;
 }
 
+
+
+
+
+@media screen and (min-width:320px ) and (max-width:480px){
+    .vegetablebuy-container{
+        flex-direction: column;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .vegetablephotocontainer{
+        flex-direction: column;
+        margin-left: 0px;
+       align-items:end;
+        margin: auto;
+    }
+    .vegetablebuy-product-img{
+        width: 95%;
+        height: 95%;
+    }
+    .vegetablephoto{
+    width: 80%;
+}
+.vegetabledname{
+   margin-top: 30px;
+    
+}
+.descriptiionvegetable{
+   
+    text-align: justify;
+}
+}
+@media screen and (min-width:481px ) and (max-width:699px){
+    .vegetablebuy-container{
+        flex-direction: column;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .vegetablephotocontainer{
+        flex-direction: column;
+        margin-left: 0px;
+       align-items:end;
+        margin: auto;
+    }
+    .vegetablebuy-product-img{
+        width: 85%;
+        height: 85%;
+    }
+    .vegetablephoto{
+    width: 70%;
+}
+.vegetabledname{
+   margin-top: 30px;
+    font-size: 29px;
+}
+.descriptiionvegetable{
+  font-size: 19px;
+    text-align: justify;
+}
+.vegetablequantity-text{
+    font-size: 22px;
+}
+
+}
+@media screen and (min-width:699px ) and (max-width:1024px){
+    .vegetablebuy-container{
+        flex-direction: row;
+       
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .vegetablephotocontainer{
+        flex-direction:row;
+       left: -30px;
+       align-items:end;
+        margin: auto;
+    }
+    .vegetablebuy-product-img
+    {
+      
+        width: 55%;
+        height: 55%;
+    }
+    .vegetablephoto{
+    width: 38%;
+    margin-left: 0px;
+}
+.vegetabledname{
+ 
+    font-size: 24px;
+}
+.descriptiionvegetable{
+  font-size: 16px;
+    text-align: justify;
+}
+.vegetablequantity-text{
+    font-size: 18px;
+}
+
+}

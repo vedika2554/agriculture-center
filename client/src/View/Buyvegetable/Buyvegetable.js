@@ -60,9 +60,9 @@ export default function Buy(){
         <div className="vegetablebuy-container">
             <img src={vegitable.image} alt={vegitable.name} className="vegetablebuy-product-img"/>
             <div>
-                <h1>Name : {vegitable.name}</h1>
-                <p>Description : {vegitable.description}</p>
-                <h1>Price : ₹ {vegitable.price}</h1>
+                <h1 className="vegetabledname">Name : {vegitable.name}</h1>
+                <p className="descriptiionvegetable">Description : {vegitable.description}</p>
+                <h1 className="vegetabledname">Price : ₹ {vegitable.price}</h1>
                 
             <div className="vegetableqt-container">
             <span className="vegetablequantity-text">Quantity : </span>
@@ -70,13 +70,13 @@ export default function Buy(){
                 <span className="vegetablequantity-text">{quantity} </span>
                 <span className="vegetablequantity-btn" onClick={increase}>+</span>
             </div>
-            <h1>Photo : </h1>
+            <h1 className="vegetabledname">Photo : </h1>
             <div className="vegetablephotocontainer">
             <img src={vegitable.image1} className="vegetablephoto"/> 
             <img src={vegitable.image2} className="vegetablephoto"/> 
             <img src={vegitable.image3} className="vegetablephoto"/> 
             </div>
-            <h1>Address : </h1>
+            <h1 className="vegetabledname">Address : </h1>
             <input type="text"
             
                 placeholder="shippingAddress"

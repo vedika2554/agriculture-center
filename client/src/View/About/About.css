@@ -5,7 +5,17 @@
    color:  #b30000;
    font-weight: bold;
 }
+.about{
+    height: 130vh;
+}
 .main-div{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.main-div1{
     height: 500px;
     width: 100%;
     display: flex;
@@ -15,9 +25,10 @@
 .sub-div{
     box-shadow: 2px 3px 4px black;
     border-radius: 20px;
-    height: 390px;
+    height: 320px;
     width: 350px;
     background-color: #f9f5d2;
+    position: relative;
 }
 .img-div{
     height: 400px;
@@ -28,9 +39,10 @@
    width: 150px;
    object-fit: cover;
    border-radius: 50%;
-   margin-left: 100px;
-   margin-top: 10px;
-
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+  margin-top: -70px;
 }
 .team-description{
     line-height: 2;
@@ -41,7 +53,7 @@
 }
 .name-heading{
     text-align: center;
-    margin: 10px 0;
+    margin-top: 50px;
     color: #004080;
 }
 .link-div{
@@ -56,4 +68,76 @@
     height: 45px;
     width: 45px;
     margin: 0 10px;
+}
+
+
+@media screen and (min-width:320px ) and (max-width:480px){
+    .main-div{
+        flex-direction: column;
+        margin-top: 340px;
+    }
+    .main-div1{
+        flex-direction: column;
+        margin-top: 690px;
+    }
+    .sub-div{
+        margin-top: 100px;
+       width: 95%;
+    }
+    .about{
+height: 380vh;
+    }
+    .team-imgs{
+        display: block;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width:481px ) and (max-width:699px){
+    .main-div{
+        flex-direction: column;
+        margin-top: 350px;
+    }
+    .main-div1{
+        flex-direction: column;
+        margin-top: 720px;
+    }
+    .sub-div{
+        margin-top: 110px;
+       width: 75%;
+    }
+    .about{
+height: 380vh;
+    }
+    .team-imgs{
+        display: block;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (min-width:699px ) and (max-width:1200px){
+    .main-div{
+        flex-direction: row;
+        margin-top: 20px;
+    }
+    .main-div1{
+        flex-direction: row;
+        margin-top: 30px;
+    }
+    .sub-div{
+        margin-top: 40px;
+       width: 95%;
+       height: fit-content;
+       margin-left: 10px;
+       margin-right: 10px;
+    }
+    .team-description{
+        font-size: 14px;
+    }
+    .about{
+height: 170vh;
+    }
 }
