@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import "./Buyflower.css";
-import Navbar from "./../../Component/Nvabar/Navbar";
+
 import Footer  from '../../Component/Footers/footer';
 import{ checkLogin } from "./../../utils/auth"
 export default function Buy(){
@@ -58,7 +58,7 @@ export default function Buy(){
     }
     return(
         <>
-        <Navbar/>
+       
         <div>
         <div className="flowersbuy-container">
             <img src={flower.image} alt={flower.name} className="flowerbuy-product-img"/>
