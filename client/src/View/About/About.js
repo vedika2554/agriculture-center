@@ -17,7 +17,7 @@ function About()
         <>
          <Navbar/>
        
-
+<div className='about'>
         <h1 className='main-heading'> Our Team</h1>
         <div className='main-div'>
             <div className='sub-div'>
@@ -62,7 +62,7 @@ function About()
                 <img src={Snehal} className='team-imgs'/>
                 <h2 className='name-heading'>Snehal</h2>
                 <p className = 'team-description' >Persuing B.E.from  </p> 
-                <p className = 'team-description' > Vishwabharati Academy Engineering Collage</p>
+                <p className = 'team-description' > Bharati Academy Engineering Collage</p>
                 <div className='link-div'>
                < a href = "https://github.com/UrmilaPawar1909" >
                 < img src = { github }
@@ -79,7 +79,7 @@ function About()
         </div>
 
 
-        <div className='main-div'>
+        <div className='main-div1'>
             <div className='sub-div'>
                 <img src={Shanzey} className='team-imgs'/>
                 <h2 className='name-heading'>Shanzey Shaikh</h2>
@@ -139,6 +139,8 @@ function About()
                </div>
             </div>
             
+        </div>
+       
         </div>
         <Footer/>
         </ >

@@ -63,9 +63,9 @@ export default function Buy(){
         <div className="flowersbuy-container">
             <img src={flower.image} alt={flower.name} className="flowerbuy-product-img"/>
             <div>
-                <h1>Name : {flower.name}</h1>
-                <p>Description : {flower.description}</p>
-                <h1>Price : ₹ {flower.price}</h1>
+                <h1 className="flowerdname">Name : {flower.name}</h1>
+                <p className="flowerdescription">Description : {flower.description}</p>
+                <h1 className="flowerdname">Price : ₹ {flower.price}</h1>
 
             <div className="flowerqt-container">
             <span className="flowerquantity-text">Quantity : </span>
@@ -73,13 +73,13 @@ export default function Buy(){
                 <span className="flowerquantity-text">{quantity} </span>
                 <span className="flowerquantity-btn" onClick={increase}>+</span>
             </div>
-            <h1>Photo : </h1>
+            <h1 className="flowerdname">Photo : </h1>
             <div className="flowerphotocontainer">
             <img src={flower.image1} className="flowerphoto"/> 
             <img src={flower.image2} className="flowerphoto"/> 
             <img src={flower.image3} className="flowerphoto"/> 
             </div>
-            <h1>Address : </h1>
+            <h1 className="flowerdname">Address : </h1>
             <input type="text"
                 placeholder="shippingAddress"
                 className="flowershippingAddress"

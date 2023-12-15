@@ -14,7 +14,7 @@ function BasicExample() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
            <Nav.Link href="/"><span className='nav-menu'>Home</span></Nav.Link>
-           <NavDropdown  title="Product" id="basic-nav-dropdown"className='nav-menu'>
+           <NavDropdown  title="Product" id="basic-nav-dropdown">
               <NavDropdown.Item href="/flowers">Flower</NavDropdown.Item>
               <NavDropdown.Item href="/fruits">
                 Fruit
@@ -28,7 +28,7 @@ function BasicExample() {
 
 
 
-            <NavDropdown title="About" id="basic-nav-dropdown"className='nav-menu'>
+            <NavDropdown title="About" id="basic-nav-dropdown">
               <NavDropdown.Item href="/about">Team members</NavDropdown.Item>
               <NavDropdown.Item href="/nearbystore">
                 Nearbystore
