@@ -3,13 +3,13 @@
 
 - AgroGeniusHub is a full-stack application designed to provide agricultural insights and tools for user. This project includes both server-side and client-side components.
 
-<img src="../client/src/View/About/Screenshot (622).png" />
+<img src="Screenshot (622).png" />
 
 ### Overview
 
 AgroGeniusHub leverages a full-stack architecture to offer comprehensive agricultural solutions. The project is divided into two main components:
 
-<img src="../client/src/View/About/Screenshot (626).png" />
+<img src="Screenshot (626).png" />
 
  **Server**
 
@@ -19,7 +19,7 @@ Framework: Node.js<br/>
 Database: MongoDB<br/>
 APIs: [app.post(),app.get()]
 
-<img src="../client/src/View/About/Screenshot (627).png" />
+<img src="Screenshot (627).png" />
 
 **Client**
 
