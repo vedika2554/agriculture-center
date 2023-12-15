@@ -29,22 +29,28 @@
     font-weight: bold;
     
 }
-@media screen and  (min-width:394px){
+.flower{
+    height: 280vh;
+}
+@media screen and  (min-width:320px)and (max-width:480px){
     .flower-tital{
        
         margin-bottom: -10px;
     }
     .flower-tital1{
         position: relative;
-        top:-3610px;
+        top:-4450px;
        
     }
     .flower-tital2{
         
-        margin-top: -1115px;
+        margin-top: -1565px;
         position: relative;
         bottom: 10px;
         
+    }
+    .flower{
+        height: 1500vh;
     }
 }
 @media screen and  (min-width:1200px){
@@ -57,7 +63,4 @@
         margin-top: 660px;
         
     }
-}
-.flower{
-    height: 280vh;
 }
