@@ -88,8 +88,8 @@ export default function Buy(){
 
                 <button className="seedBuy-btn" type="button" onClick={placeorder}>PlaceOrder</button>
             </div>
-        </div>
+      </div>
       <Footer/>
       </>
-    )
+)
 }
