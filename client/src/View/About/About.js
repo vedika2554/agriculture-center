@@ -62,7 +62,7 @@ function About()
                 <img src={Snehal} className='team-imgs'/>
                 <h2 className='name-heading'>Snehal</h2>
                 <p className = 'team-description' >Persuing B.E.from  </p> 
-                <p className = 'team-description' > Vishwabharati Academy Engineering Collage</p>
+                <p className = 'team-description' > Bharati Academy Engineering Collage</p>
                 <div className='link-div'>
                < a href = "https://github.com/UrmilaPawar1909" >
                 < img src = { github }
