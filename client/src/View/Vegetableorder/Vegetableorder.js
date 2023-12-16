@@ -1,7 +1,7 @@
 import axios from 'axios';
 import './Vegetableorder.css'
 import React, { useEffect, useState } from 'react'
-import Navbar from '../../Component/Nvabar/Navbar'
+import Navbar from '../../Component/Navbar/Navbar'
 import Footer from '../../Component/Footers/footer'
 
 

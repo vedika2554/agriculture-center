@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import SeedCard from '../../Component/Seedcard/Seedcard'
 import axios from 'axios'
 import './Seed-card.css'
-import Navbar from "../../Component/Nvabar/Navbar";
+import Navbar from "../../Component/Navbar/Navbar";
 import Footer  from '../../Component/Footers/footer';
 function Seed(){
 

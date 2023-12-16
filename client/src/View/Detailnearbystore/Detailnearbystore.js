@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import "./Detailnearbystore.css";
-import Navbar from '../../Component/Nvabar/Navbar'
+import Navbar from '../../Component/Navbar/Navbar'
 import Footer  from '../../Component/Footers/footer';
 export default function Buy(){
     const {id} = useParams();

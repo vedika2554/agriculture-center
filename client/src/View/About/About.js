@@ -3,7 +3,7 @@ import './About.css';
 import github from './github.png';
 import linkedin from './linked-in.png'
 import Snehal from './snehal.jpg'
-import Navbar from '../../Component/Nvabar/Navbar'
+import Navbar from '../../Component/Navbar/Navbar'
 import Achal from './achal.jpg'
 import Pravin from './Pravin.png'
 import Vedika from './vedika.jpg'

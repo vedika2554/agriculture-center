@@ -1,7 +1,7 @@
 import React ,{useState} from 'react';
 import "./Signup.css";
 import axios from 'axios';
-import Navbar from "../../Component/Nvabar/Navbar";
+import Navbar from "../../Component/Navbar/Navbar";
 import Footer  from '../../Component/Footers/footer';
 function Signup(){
 

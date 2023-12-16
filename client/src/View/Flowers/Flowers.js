@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import FlowerCard from '../../Component/Flowercard/Flowercard';
 import axios from 'axios'
 import './Flowers.css'
-import Navbar from "../../Component/Nvabar/Navbar";
+import Navbar from "../../Component/Navbar/Navbar";
 import Footer  from '../../Component/Footers/footer';
 
 function Flowers(){

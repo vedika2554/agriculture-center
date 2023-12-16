@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import VegitableCard from '../../Component/Vegitablecard/Vegitablecard';
 import axios from 'axios'
 import './Vegitable.css'
-import Navbar from "../../Component/Nvabar/Navbar";
+import Navbar from "../../Component/Navbar/Navbar";
 import Footer  from '../../Component/Footers/footer';
 function Vegitable(){
 

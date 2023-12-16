@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import "./Buyflower.css";
-import Navbar from "../../Component/Nvabar/Navbar";
+import Navbar from "../../Component/Navbar/Navbar";
 import Footer  from '../../Component/Footers/footer';
 import{ checkLogin } from "./../../utils/auth"
 export default function Buy(){
