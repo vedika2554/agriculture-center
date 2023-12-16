@@ -6,6 +6,7 @@ import Navbar from "../../Component/Nvabar/Navbar";
 import Footer  from '../../Component/Footers/footer';
 import{ checkLogin } from "./../../utils/auth"
 export default function Buy(){
+    
     const {id} = useParams();
     const [user, setUser] = useState({});
     const [flower,setFlower] = useState({});

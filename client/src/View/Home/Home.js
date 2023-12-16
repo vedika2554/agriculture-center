@@ -1,6 +1,6 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import Navbar from "../../Component/Nvabar/Navbar";
+import Navbar from "../../Component/navbar/navbar";
 import "./Home.css";
 import Footer  from '../../Component/Footers/footer';
 
@@ -67,7 +67,7 @@ function Home() {
             <div className='card'>
                 <div className='card-1'>
                     <h1 className='head'>Flowers</h1>
-                    <p className='c-text'>Flower, the characteristic reproductive structure of angiosperms. As popularly used, the term “flower” especially applies when part or all of the reproductive structure is distinctive in colour and form.</p>
+                    <p className='c-text'>Flower, the characteristic reproductive structure of angiosperms. As popularly used, the term “flower” applies when part or all of the reproductive structure is distinctive in colour and form.</p>
                
                     <img src='https://tse1.mm.bing.net/th?id=OIP.ADxbxfNWjCnbsap-1FQZlgHaEo&pid=Api&P=0&h=180' alt='' className='card-img'/>
                     </div>
