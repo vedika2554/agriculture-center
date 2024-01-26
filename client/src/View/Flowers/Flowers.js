@@ -29,8 +29,7 @@ return(
         {
             flower?.map((flower, index)=>{
                const {_id, name, price, description, image} = flower;
-                return(<FlowerCard key={index} id={_id} name={name} price={price}
-                    description={description} image={image}/>)
+                return(<FlowerCard/>)
                     
             })
         }
