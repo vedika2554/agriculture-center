@@ -9,7 +9,7 @@ function Vegitable(){
     const[vegitable, setVegitable] = useState([]);
 
     const loadVegitable = async () =>{
-        const responce = await axios.get('/vegitable');
+        const responce = await axios.get('/api/vegitable');
         setVegitable(responce?.data?.data)
     }
 

@@ -184,7 +184,7 @@ app.delete('/flowers/:id', async (req, res) => {
 
     // get api for fruit
 
-    app.get('/fruits', async (req, res) => {
+    app.get('/api/fruits', async (req, res) => {
 
       const fruits = await Fruits.find();
 
@@ -515,7 +515,7 @@ app.delete('/flowers/:id', async (req, res) => {
           // get api for seeds
 
 
-          app.get('/seeds', async (req, res) => {
+          app.get('/api/seeds', async (req, res) => {
             const seeds = await Seeds.find();
 
             res.json({
@@ -796,7 +796,7 @@ app.post('/vegitable', async (req, res) => {
 
 //get api for vegitable
 
-app.get('/vegitable', async(req, res)=>{
+app.get('/api/vegitable', async(req, res)=>{
   const vegitable = await Vegitable.find();
 
   res.json({

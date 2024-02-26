@@ -9,7 +9,7 @@ function Fruit(){
     const[fruit, setFruit] = useState([]);
 
     const loadFruit = async () =>{
-        const responce = await axios.get('/fruits');
+        const responce = await axios.get('/api/fruits');
         setFruit(responce?.data?.data)
     }
 

@@ -9,7 +9,7 @@ function Seed(){
     const[seed, setSeed] = useState([]);
 
     const loadSeed = async () =>{
-        const responce = await axios.get('/seeds');
+        const responce = await axios.get('/api/seeds');
         setSeed(responce?.data?.data)
     }
 
