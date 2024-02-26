@@ -434,7 +434,7 @@ margin-top: 40px;
 /**media query for  large devices**/
 @media screen and (min-width:1201px ) and (max-width:1400px){
   .image1{
-    width: 90%;
+  width: 50%;
   }
   .home{
     height: fit-content;
@@ -510,7 +510,9 @@ margin-top: 40px;
   
   
 
-
+.img-con{
+  display: flex;
+}
 
 
 

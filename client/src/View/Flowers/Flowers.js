@@ -11,7 +11,7 @@ function Flower(){
 
 
     const loadFlower = async () => {
-        const responce = await axios.get('/flowers');
+        const responce = await axios.get('/api/flowers');
         setFlower(responce?.data?.data)
     }
 

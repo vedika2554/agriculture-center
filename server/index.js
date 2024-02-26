@@ -69,7 +69,7 @@ app.post('/flower', async (req, res) => {
 
 // get api for flower
 
-app.get('/flowers', async (req, res) => {
+app.get('/api/flowers', async (req, res) => {
 
   const flowers = await Flowers.find();
 

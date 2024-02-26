@@ -19,8 +19,10 @@ function Home() {
         <img
           className="image1"
           src="https://img.freepik.com/premium-photo/bouquet-colorful-pink-orange-roses-mix-flowers-spring-floral-background-wallpaper_407348-1261.jpg?w=2000"
+          
           alt="First slide"
         />
+        
         <Carousel.Caption>
           <h5 className='slide-tital'>Flowers</h5>
           <p className='slide-description1'> We say the plant 'flowers', 'is flowering' or 'is in flower' when this colourful part begins to grow bigger and open out. </p>
