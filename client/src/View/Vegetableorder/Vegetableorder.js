@@ -31,7 +31,7 @@ function Myorders(){
                     return(<div key={index} className='vegitableordercard'>
                         <img className='vegitableimg' src={vegitable.image}/>
                         <h2 className='vegitablename'>{vegitable.name}</h2>
-                        <h4 className='vegitableprice'> Price: {vegitable.price}*{quantity}={vegitable*quantity}</h4>
+                        <h4 className='vegitableprice'> Price: {vegitable.price}*{quantity}={vegitable.price*quantity}</h4>
                         <h4 className='vegitableaddress'>Address : {shippingAddress}</h4>
 
                     </div>)

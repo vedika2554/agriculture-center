@@ -704,7 +704,7 @@ app.delete('/flowers/:id', async (req, res) => {
         
 
 
-app.get('/seeds', async(req, res)=>{
+app.get('/api/seeds', async(req, res)=>{
   const seeds = await Seeds.find();
 
   res.json({
@@ -716,7 +716,7 @@ app.get('/seeds', async(req, res)=>{
 
 
 
-app.get('/api/seeds/:id', async(req, res)=>{
+app.get('/seeds/:id', async(req, res)=>{
   const {id} = req.params;
 
   const seeds = await Seeds.findOne({_id: id});
