@@ -716,7 +716,7 @@ app.get('/seeds', async(req, res)=>{
 
 
 
-app.get('/seeds/:id', async(req, res)=>{
+app.get('/api/seeds/:id', async(req, res)=>{
   const {id} = req.params;
 
   const seeds = await Seeds.findOne({_id: id});
